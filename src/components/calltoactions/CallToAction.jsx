@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Map from "../Map";
 import Contact from "../Contact";
+import Reveal from "react-reveal/Reveal";
 import Social from "../Social";
 
 Modal.setAppElement("#root");
 
-const CallToAction = () => {
+const CallToActionTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModalOne() {
@@ -19,7 +20,7 @@ const CallToAction = () => {
         className="shane_tm_talk bg_image_props"
         style={{
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "img/callto-action/1.jpg"
+            process.env.PUBLIC_URL + "img/callto-action/blue-1.png"
           })`,
         }}
       >
@@ -35,14 +36,18 @@ const CallToAction = () => {
         {/* End background */}
 
         <div className="talk_inner">
-          <div className="text">
-            <h3>Let's work together!</h3>
-          </div>
-          <div className="button">
-            <button className="white-fill-bg" onClick={toggleModalOne}>
-              Make an enquiry
-            </button>
-          </div>
+          <Reveal effect="fadeInUp">
+            <div className="text">
+              <h3>Trabajemos Juntos!</h3>
+            </div>
+          </Reveal>
+          <Reveal effect="fadeInUp">
+            <div className="button">
+              <button className="white-fill-bg" onClick={toggleModalOne}>
+               Contactame!
+              </button>
+            </div>
+          </Reveal>
         </div>
         {/* End talk_inner */}
       </div>
@@ -76,24 +81,20 @@ const CallToAction = () => {
                 </div>
                 {/* End left */}
                 <div className="right">
-                  <div className="map_wrap">
-                    <Map />
-                  </div>
-                </div>
-                {/* End right */}
-              </div>
-              {/* End wrapper */}
-
-              <div className="short_info">
+                  {/* <div className="map_wrap"> */}
+                    {/* <Map /> */}
+                    <div className="short_info">
                 <ul>
                   <li>
                     <div className="list_inner">
-                      <img
+                      <a href="https://wa.me/5493512041537">
+                        <img
                         className="svg"
-                        src="img/svg/location.svg"
-                        alt="location"
+                        src="img/svg/whatsapp1.svg"
+                        alt="whatsapp"
                       />
-                      <p>Brook 103, 90021 New York, USA</p>
+                      <p>+54 9 3512041537</p>
+                        </a>
                     </div>
                   </li>
                   {/* End silgle address */}
@@ -102,11 +103,11 @@ const CallToAction = () => {
                     <div className="list_inner">
                       <img
                         className="svg"
-                        src="img/svg/phone.svg"
-                        alt="phone"
+                        src="img/svg/email1.svg"
+                        alt="Email"
                       />
                       <p>
-                        <a href="tel:+77 033 442 55 57">+77 033 442 55 57</a>
+                        <a href="mailto:leoruhl94@gmail.com">leoruhl94@gmail.com</a>
                       </p>
                     </div>
                   </li>
@@ -114,18 +115,98 @@ const CallToAction = () => {
 
                   <li>
                     <div className="list_inner">
+                    <a href="https://linkedin.com/in/leonardo-ruhl"> 
                       <img
                         className="svg"
-                        src="img/svg/share.svg"
+                        src="img/svg/linkedin1.svg"
                         alt="share"
                       />
-
-                      <Social />
+                      <p>Linkedin</p>
+                      </a>
                     </div>
                   </li>
-                  {/* End silgle address */}
+                    {/* End linkedin */}
+                  <li>
+                    <div className="list_inner">
+                    <a href="https://github.com/leoruhl94"> 
+                      <img
+                        className="svg"
+                        src="img/svg/github1.svg"
+                        alt="share"
+                      />
+                      <p>Github</p>
+                      </a>
+                    </div>
+                  </li>
+                  {/* End github */}
                 </ul>
               </div>
+
+
+                  {/* </div> */}
+                </div>
+                {/* End right */}
+              </div>
+              {/* End wrapper */}
+
+              {/* <div className="short_info">
+                <ul>
+                  <li>
+                    <div className="list_inner">
+                      <a href="https://wa.me/5493512041537">
+                        <img
+                        className="svg"
+                        src="img/svg/whatsapp1.svg"
+                        alt="whatsapp"
+                      />
+                      <p>+54 9 3512041537</p>
+                        </a>
+                    </div>
+                  </li> */}
+                  {/* End silgle address */}
+{/* 
+                  <li>
+                    <div className="list_inner">
+                      <img
+                        className="svg"
+                        src="img/svg/email1.svg"
+                        alt="Email"
+                      />
+                      <p>
+                        <a href="email:leoruhl94@gmail.com">leoruhl94@gmail.com</a>
+                      </p>
+                    </div>
+                  </li> */}
+                  {/* End silgle address */}
+{/* 
+                  <li>
+                    <div className="list_inner">
+                    <a href="https://linkedin.com/in/leonardo-ruhl"> 
+                      <img
+                        className="svg"
+                        src="img/svg/linkedin1.svg"
+                        alt="share"
+                      />
+                      <p>Linkedin</p>
+                      </a>
+                    </div>
+                  </li> */}
+                    {/* End linkedin */}
+                  {/* <li>
+                    <div className="list_inner">
+                    <a href="https://github.com/leoruhl94"> 
+                      <img
+                        className="svg"
+                        src="img/svg/github1.svg"
+                        alt="share"
+                      />
+                      <p>Github</p>
+                      </a>
+                    </div>
+                  </li> */}
+                  {/* End github */}
+                {/* </ul>
+              </div> */}
               {/* End modal conetent */}
             </div>
           </div>
@@ -138,4 +219,4 @@ const CallToAction = () => {
   );
 };
 
-export default CallToAction;
+export default CallToActionTwo;

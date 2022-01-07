@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "react-reveal/Reveal";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
                       className="main"
                       style={{
                         backgroundImage: `url(${
-                          process.env.PUBLIC_URL + "img/about/1.jpg"
+                          process.env.PUBLIC_URL + "img/about/workspace_1.jpg"
                         })`,
                       }}
                     ></div>
@@ -30,23 +31,34 @@ const About = () => {
                 <Reveal effect="fadeInLeft">
                   <div className="shane_tm_title">
                     <span>About Me</span>
-                    <h3>Creative Independent Web Developer based in USA</h3>
+                    <h3>Leonardo Ruhl, Desarrollador Web </h3>
                   </div>
                   <div className="text">
                     <p>
-                      I'm web designer, and I'm very passionate and dedicated to
-                      my work. With 20 years experience as a professional web
-                      developer, I have acquired the skills and knowledge
-                      necessary to make your project a success. I enjoy every
-                      step of the design process, from discussion and
-                      collaboration.
+                      Me apasiona programar, enseñar y encarar nuevos desafíos
+                      que continuamente me permitan aprender algo nuevo. Siempre
+                      me gusto crear cosas, programando tengo la oportunidad de
+                      crear soluciones que puedan ayudar a mejorar el mundo con
+                      solo unas líneas de código. <br />
+                      Actualmente estoy en búsqueda de nuevos desafíos donde
+                      pueda aportar mi experiencia y conocimientos. Busco un
+                      puesto que me permita seguir aprendiendo y desarrollandome
+                      como profesional.
                     </p>
                   </div>
-                  <div className="shane_tm_button">
-                    <a href="img/resume/resume.jpg" download>
-                      Download CV
-                    </a>
-                  </div>
+                  <section className="shane_tm_about_buttons">
+                    <div className="shane_tm_button">
+                      <a href="img/resume/resume.jpg" download>
+                        Descargar CV
+                      </a>
+                    </div>
+                    <div className="shane_tm_button">
+                      <Link to="/about">
+                        Más Sobre Mi
+                      </Link>
+                     
+                    </div>
+                  </section>
                 </Reveal>
               </div>
               {/* End right */}

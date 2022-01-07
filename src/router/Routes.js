@@ -1,22 +1,19 @@
 import React from "react";
-import Preview from "../views/Preview";
-import HomeOne from "../views/all-home-version/HomeOne";
-import HomeTwo from "../views/all-home-version/HomeTwo";
-import HomeThree from "../views/all-home-version/HomeThree";
-import HomeFour from "../views/all-home-version/HomeFour";
+import HomePage from "../views/HomePage/HomePage";
 import NotFound from "../views/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { ProjectsPage } from "../views/Pages/ProjectsPage";
+import { AboutPage } from "../views/Pages/AboutPage";
 
 const Routes = () => {
   return (
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={Preview} />
-          <Route path="/home-one" component={HomeOne} />
-          <Route path="/home-two" component={HomeTwo} />
-          <Route path="/home-three" component={HomeThree} />
-          <Route path="/home-four" component={HomeFour} />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/projects/:id" component={ProjectsPage} />
+          <Route exact path="/about" component={AboutPage} />
           <Route component={NotFound} />
         </Switch>
       </Router>

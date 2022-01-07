@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
+import Reveal from "react-reveal/Reveal";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
@@ -29,15 +30,17 @@ const Video = () => {
           />
 
           <span className="rounded" onClick={() => setOpen(true)}></span>
-
-          <h3 className="text">
-            I am delivering beautiful digital products for my clients
-          </h3>
-
+          <Reveal effect="fadeInUp">
+            <h3 className="text">
+              I am delivering beautiful digital products for my clients
+            </h3>
+          </Reveal>
           <div className="shane_tm_video_button">
-            <button className="popup-youtube" onClick={() => setOpen(true)}>
-              Watch Video
-            </button>
+            <Reveal effect="fadeInUp">
+              <button className="popup-youtube" onClick={() => setOpen(true)}>
+                Watch Video
+              </button>
+            </Reveal>
           </div>
         </div>
         {/* End .content */}

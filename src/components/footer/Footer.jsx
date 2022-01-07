@@ -10,19 +10,17 @@ const Footer = () => {
               <p>
                 &copy; {new Date().getFullYear()} by{" "}
                 <a
-                  href="https://themeforest.net/user/ib-themes"
-                  target="_blank"
+                  href="#about"
+                  // target="_blank"
                   rel="noreferrer"
                 >
-                  ib-themes
+                  Leonardo Ruhl
                 </a>
                 . All rights reserved.
               </p>
             </div>
-            {/* End inner */}
           </div>
         </div>
-        {/* End shane_tm_copyright */}
       </div>
     </>
   );

@@ -24,7 +24,8 @@ const Header = () => {
         <div className={navbar ? "topbar_inner opened" : "topbar_inner"}>
           <div className="logo">
             <NavLink to="/">
-              <img src="/img/logo/new/dark.png" alt="partners brand" />
+              {/* <img src="/img/logo/new/dark.png" alt="partners brand" /> */}
+              <img src="/img/logo/logo_02.png" alt="partners brand" />
             </NavLink>
           </div>
           {/* End logo */}
@@ -39,27 +40,16 @@ const Header = () => {
                 <a href="#home">Home</a>
               </li>
               <li>
+              {/* <NavLink to="#about">About</NavLink> */}
                 <a href="#about">About</a>
               </li>
               <li>
                 <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#news">News</a>
-              </li>
-              <li>
                 <a href="#contact">Contact</a>
               </li>
-              <li>
-                <a
-                  className="white-fill-bg btn-outline btn_sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://themeforest.net/item/shane-react-personal-portfolio-template/32642263"
-                >
-                  Buy Now
-                </a>
-              </li>
+
             </Scrollspy>
           </div>
           {/* End menu */}
@@ -74,7 +64,7 @@ const Header = () => {
             <div className="topbar_in">
               <div className="logo">
                 <NavLink to="/">
-                  <img src="/img/logo/new/dark.png" alt="partners brand" />
+                   <img src="/img/logo/logo_02.png" alt="partners brand" />
                 </NavLink>
               </div>
               {/* End logo */}
@@ -108,9 +98,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#about" onClick={handleClick}>
+                  <NavLink to="#about" onClick={handleClick}>
                     About
-                  </a>
+                  </NavLink>
+                  {/* <a href="/#about" onClick={handleClick}>
+                  </a> */}
                 </li>
                 <li>
                   <a href="#portfolio" onClick={handleClick}>
@@ -118,23 +110,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#news" onClick={handleClick}>
-                    News
-                  </a>
-                </li>
-                <li>
                   <a href="#contact" onClick={handleClick}>
                     Contact
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="white-fill-bg btn-outline btn_sm"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://themeforest.net/"
-                  >
-                    Buy Now
                   </a>
                 </li>
               </ul>
