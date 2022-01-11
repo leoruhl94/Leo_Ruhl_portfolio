@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div className="shane_tm_intro shane_error_page">
+    <div className="portfolio_intro shane_error_page">
       <div
         className="hero"
         style={{

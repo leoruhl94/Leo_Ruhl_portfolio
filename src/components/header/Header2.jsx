@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Scrollspy from "react-scrollspy";
-// import Social from "../SocialTwo";
+import React, { useEffect, useState } from "react";
+
+import Social from "../SocialTwo";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header2 = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [navbar, setNavbar] = useState(false);
@@ -29,40 +29,44 @@ const Header = () => {
           </div>
           {/* End logo */}
           <div className="menu">
-            <Scrollspy
+            {/* <div
               className="anchor_nav"
-              items={["home", "about", "portfolio", "contact"]}
-              currentClassName="current"
-              offset={-200}
+            //   items={["home", "about", "portfolio", "news", "contact"]}
+            //   currentClassName="current"
+            //   offset={-200}
+             > */}
+
+            <ul
+            //   className="anchor_nav"
+            //   items={["home", "about", "portfolio", "news", "contact"]}
+            //   currentClassName="current"
+            //   offset={-200}
             >
               <li>
-                <a href="#home">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="#about">About</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <NavLink to="/projects">Portfolio</NavLink>
               </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-
-            </Scrollspy>
+            </ul>
+            {/* </div> */}
           </div>
           {/* End menu */}
         </div>
       </div>
       {/* End portfolio_topbar */}
 
-      {/* Start shane mobile menu */}
+      {/* Start mobile menu */}
       <div className="portfolio_mobile_menu">
         <div className="topbar_inner">
           <div className="container bigger">
             <div className="topbar_in">
               <div className="logo">
                 <NavLink to="/">
-                   <img src="/img/logo/logo_02.png" alt="partners brand" />
+                  <img src="/img/logo/logo_02.png" alt="partners brand" />
                 </NavLink>
               </div>
               {/* End logo */}
@@ -99,6 +103,8 @@ const Header = () => {
                   <NavLink to="#about" onClick={handleClick}>
                     About
                   </NavLink>
+                  {/* <a href="/#about" onClick={handleClick}>
+                  </a> */}
                 </li>
                 <li>
                   <a href="#portfolio" onClick={handleClick}>
@@ -112,7 +118,7 @@ const Header = () => {
                 </li>
               </ul>
               <div className="social-menu">
-                {/* <Social /> */}
+                <Social />
               </div>
               {/* End social share */}
             </div>
@@ -125,4 +131,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;

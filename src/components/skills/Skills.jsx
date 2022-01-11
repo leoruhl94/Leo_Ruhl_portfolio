@@ -4,13 +4,13 @@ import Reveal from "react-reveal/Reveal";
 const SkillsTwo = () => {
   return (
     <>
-      <div className="shane_tm_section">
-        <div className="shane_tm_skills">
+      <div className="portfolio_section">
+        <div className="portfolio_skills">
           <div className="container">
             <div className="skills_inner">
               <Reveal effect="fadeInLeft">
                 <div className="left">
-                  <div className="shane_tm_title">
+                  <div className="portfolio_title">
                     <h3>Skills  </h3>
                   </div>
                   <div className="text">

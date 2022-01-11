@@ -1,24 +1,25 @@
 import React from "react";
 import HomePage from "../views/HomePage/HomePage";
 import NotFound from "../views/NotFound";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ProjectsPage } from "../views/Pages/ProjectsPage";
 import { AboutPage } from "../views/Pages/AboutPage";
+import { ScrollToTop } from "../components/ScrollToTop";
 
-const Routes = () => {
+const Routing = () => {
   return (
     <>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/projects" component={ProjectsPage} />
-          <Route exact path="/projects/:id" component={ProjectsPage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:id" element={<ProjectsPage />} />
+          <Route element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
 
-export default Routes;
+export default Routing;

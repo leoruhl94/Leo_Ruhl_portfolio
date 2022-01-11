@@ -1,0 +1,119 @@
+.about__profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 50%;
+    border-radius: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    font-weight: 800;
+    font-family: "Poppins";
+  }
+  h3 {
+    padding-top: 0.5rem;
+    font-weight: 700;
+    font-family: "Poppins";
+  }
+}
+.about_languages {
+    h3{
+        padding: 20px 0;
+    }
+    h5{
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        svg{
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+    }
+    clear: both;
+
+}
+.about_tecnologies {
+    h3{
+        padding: 20px 0;
+    }
+    
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      color: #222;
+      width: 33%;
+      svg {
+        color: #222;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.portfolio_about_experience {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+
+  .experience_left {
+    width: 25%;
+    h6 {
+    }
+    .separator {
+      display: flex;
+      align-items: center;
+      svg {
+        color: white;
+        background-color: black;
+        border-radius: 100%;
+        height: 18px;
+        width: 18px;
+      }
+
+      span {
+        display: block;
+        border: 0.2px solid #444;
+        flex-grow: 1;
+      }
+    }
+  }
+  .experience_right {
+    width: 75%;
+    padding: 15px 0 0 25px;
+  }
+}
+.about_subtitle {
+  padding: 20px 0;
+}
+.portfolio_button_about{
+    text-align: center;
+    padding-top: 50px;
+}
+#aboutPage_1 .portfolio_about{
+    background-color: #fff;
+    padding-bottom: 25px;
+}
+#aboutPage_2 .portfolio_about{
+    // background-color: #fff;
+    padding-top: 25px;
+}
+#aboutPage_3 .portfolio_about{
+    padding: 50px 0;
+   background-size: cover;
+   .title h3{
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 20px;
+   }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import Routes from "./router/Routes";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const App = () => {
   return (
-    <div className="shane_tm_all_wrap">
-      <ScrollToTop />
+    <div className="portfolio_all_wrap">
+      <ScrollToTopButton />
       <Routes />
     </div>
   );

@@ -1,24 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
-import Slider from "../../components/slider/SliderTwo";
+import Slider from "../../components/slider/Slider";
 import About from "../../components/about/About";
 import Portfolio from "../../components/portfolio/Portfolio";
-import Skills from "../../components/skills/Skills";
 import CallToAction from "../../components/calltoactions/CallToAction";
 import Footer from "../../components/footer/Footer";
 
-const HomeTwo = () => {
+const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
+
+  
   return (
     <div className="home-two">
       <Header />
       <Slider />
       <About />
       <Portfolio />
-      {/* <Skills /> */}
       <CallToAction />
       <Footer />
     </div>
   );
 };
 
-export default HomeTwo;
+export default HomePage;

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Map from "../Map";
-import Contact from "../Contact";
+import Contact from "../Contact/Contact";
 import Reveal from "react-reveal/Reveal";
-import Social from "../Social";
+import { Contactlinks } from "../Contact/ContactLinks";
 
 Modal.setAppElement("#root");
 
@@ -15,9 +14,9 @@ const CallToActionTwo = () => {
   }
 
   return (
-    <div className="shane_tm_section" id="contact">
+    <div className="portfolio_section" id="contact">
       <div
-        className="shane_tm_talk bg_image_props"
+        className="portfolio_talk bg_image_props"
         style={{
           backgroundImage: `url(${
             process.env.PUBLIC_URL + "img/callto-action/blue-1.png"
@@ -44,7 +43,7 @@ const CallToActionTwo = () => {
           <Reveal effect="fadeInUp">
             <div className="button">
               <button className="white-fill-bg" onClick={toggleModalOne}>
-               Contactame!
+                Contactame!
               </button>
             </div>
           </Reveal>
@@ -60,7 +59,7 @@ const CallToActionTwo = () => {
         overlayClassName="custom-overlay"
         closeTimeoutMS={500}
       >
-        <div className="shane_tm_mobalbox_contact">
+        <div className="portfolio_mobalbox_contact">
           <button className="close-modal" onClick={toggleModalOne}>
             <img src="/img/svg/cancel.svg" alt="close icon" />
           </button>
@@ -72,141 +71,16 @@ const CallToActionTwo = () => {
                 <h3>Get in touch</h3>
               </div>
               {/* End title */}
-
               <div className="wrapper">
                 <div className="left">
                   <div className="fields">
                     <Contact />
                   </div>
                 </div>
-                {/* End left */}
                 <div className="right">
-                  {/* <div className="map_wrap"> */}
-                    {/* <Map /> */}
-                    <div className="short_info">
-                <ul>
-                  <li>
-                    <div className="list_inner">
-                      <a href="https://wa.me/5493512041537">
-                        <img
-                        className="svg"
-                        src="img/svg/whatsapp1.svg"
-                        alt="whatsapp"
-                      />
-                      <p>+54 9 3512041537</p>
-                        </a>
-                    </div>
-                  </li>
-                  {/* End silgle address */}
-
-                  <li>
-                    <div className="list_inner">
-                      <img
-                        className="svg"
-                        src="img/svg/email1.svg"
-                        alt="Email"
-                      />
-                      <p>
-                        <a href="mailto:leoruhl94@gmail.com">leoruhl94@gmail.com</a>
-                      </p>
-                    </div>
-                  </li>
-                  {/* End silgle address */}
-
-                  <li>
-                    <div className="list_inner">
-                    <a href="https://linkedin.com/in/leonardo-ruhl"> 
-                      <img
-                        className="svg"
-                        src="img/svg/linkedin1.svg"
-                        alt="share"
-                      />
-                      <p>Linkedin</p>
-                      </a>
-                    </div>
-                  </li>
-                    {/* End linkedin */}
-                  <li>
-                    <div className="list_inner">
-                    <a href="https://github.com/leoruhl94"> 
-                      <img
-                        className="svg"
-                        src="img/svg/github1.svg"
-                        alt="share"
-                      />
-                      <p>Github</p>
-                      </a>
-                    </div>
-                  </li>
-                  {/* End github */}
-                </ul>
-              </div>
-
-
-                  {/* </div> */}
+                  <Contactlinks />
                 </div>
-                {/* End right */}
               </div>
-              {/* End wrapper */}
-
-              {/* <div className="short_info">
-                <ul>
-                  <li>
-                    <div className="list_inner">
-                      <a href="https://wa.me/5493512041537">
-                        <img
-                        className="svg"
-                        src="img/svg/whatsapp1.svg"
-                        alt="whatsapp"
-                      />
-                      <p>+54 9 3512041537</p>
-                        </a>
-                    </div>
-                  </li> */}
-                  {/* End silgle address */}
-{/* 
-                  <li>
-                    <div className="list_inner">
-                      <img
-                        className="svg"
-                        src="img/svg/email1.svg"
-                        alt="Email"
-                      />
-                      <p>
-                        <a href="email:leoruhl94@gmail.com">leoruhl94@gmail.com</a>
-                      </p>
-                    </div>
-                  </li> */}
-                  {/* End silgle address */}
-{/* 
-                  <li>
-                    <div className="list_inner">
-                    <a href="https://linkedin.com/in/leonardo-ruhl"> 
-                      <img
-                        className="svg"
-                        src="img/svg/linkedin1.svg"
-                        alt="share"
-                      />
-                      <p>Linkedin</p>
-                      </a>
-                    </div>
-                  </li> */}
-                    {/* End linkedin */}
-                  {/* <li>
-                    <div className="list_inner">
-                    <a href="https://github.com/leoruhl94"> 
-                      <img
-                        className="svg"
-                        src="img/svg/github1.svg"
-                        alt="share"
-                      />
-                      <p>Github</p>
-                      </a>
-                    </div>
-                  </li> */}
-                  {/* End github */}
-                {/* </ul>
-              </div> */}
               {/* End modal conetent */}
             </div>
           </div>

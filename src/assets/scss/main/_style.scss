@@ -5,26 +5,26 @@
 /*	This file is made for React Version
 
 
-01) SHANE BASE
-02) SHANE MOBILE MENU
-03) SHANE TOPBAR
-04) SHANE HERO
-05) SHANE ABOUT
-06) SHANE PORTFOLIO
-07) SHANE SKILLS
-08) SHANE VIDEO
-09) SHANE PARTNERS
-10) SHANE TESTIMONIALS
-11) SHANE NEWS
-12) SHANE TALK
-13) SHANE COPYRIGHT
-14) SHANE MODALBOX CONTACT
-15) SHANE CURSOR
-16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
+01) PORTFOLIO BASE
+02) PORTFOLIO MOBILE MENU
+03) PORTFOLIO TOPBAR
+04) PORTFOLIO HERO
+05) PORTFOLIO ABOUT
+06) PORTFOLIO PORTFOLIO
+07) PORTFOLIO SKILLS
+08) PORTFOLIO VIDEO
+09) PORTFOLIO PARTNERS
+10) PORTFOLIO TESTIMONIALS
+11) PORTFOLIO NEWS
+12) PORTFOLIO TALK
+13) PORTFOLIO COPYRIGHT
+14) PORTFOLIO MODALBOX CONTACT
+15) PORTFOLIO CURSOR
+16) PORTFOLIO MEDIA QUERIES (FOR SMALL DEVIVES)
 
 
 /*---------------------------------------------------*/
-/*	01) SHANE BASE
+/*	01) PORTFOLIO BASE
 /*---------------------------------------------------*/
 
 html {
@@ -125,20 +125,20 @@ h6 {
   font-size: 16px;
 }
 
-.shane_tm_all_wrap {
+.portfolio_all_wrap {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   position: relative;
 }
-.shane_tm_all_wrap,
-.shane_tm_all_wrap * {
+.portfolio_all_wrap,
+.portfolio_all_wrap * {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
 }
-.shane_tm_section {
+.portfolio_section {
   width: 100%;
   height: auto;
   clear: both;
@@ -264,10 +264,10 @@ h6 {
 }
 
 /*---------------------------------------------------*/
-/*	02) SHANE MOBILE MENU
+/*	02) PORTFOLIO MOBILE MENU
 /*---------------------------------------------------*/
 
-.shane_tm_mobile_menu {
+.portfolio_mobile_menu {
   width: 100%;
   height: auto;
   position: relative;
@@ -280,7 +280,7 @@ h6 {
     margin-top: 20px;
   }
 }
-.shane_tm_mobile_menu .topbar_inner {
+.portfolio_mobile_menu .topbar_inner {
   width: 100%;
   height: auto;
   float: left;
@@ -289,7 +289,7 @@ h6 {
   padding: 20px 0px;
   box-shadow: 0 10px 40px 0 rgba(62, 68, 125, 0.1);
 }
-.shane_tm_mobile_menu .topbar_in {
+.portfolio_mobile_menu .topbar_in {
   width: 100%;
   height: auto;
   clear: both;
@@ -397,7 +397,7 @@ h6 {
   width: 26px;
   transition: all 0.3s ease;
 }
-.shane_tm_mobile_menu .dropdown {
+.portfolio_mobile_menu .dropdown {
   width: 100%;
   height: auto;
   clear: both;
@@ -412,19 +412,19 @@ h6 {
   top: 0;
   left: 0;
 }
-.shane_tm_mobile_menu .dropdown {
+.portfolio_mobile_menu .dropdown {
   &.active {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
   }
 }
-.shane_tm_mobile_menu .dropdown .dropdown_inner {
+.portfolio_mobile_menu .dropdown .dropdown_inner {
   width: 100%;
   height: 100vh;
   padding: 25px 0px;
 }
-.shane_tm_mobile_menu .dropdown .dropdown_inner > ul {
+.portfolio_mobile_menu .dropdown .dropdown_inner > ul {
   margin: 0px;
   list-style-type: none;
   height: 100%;
@@ -435,12 +435,12 @@ h6 {
   text-align: center;
   margin-top: -50px;
 }
-.shane_tm_mobile_menu .dropdown .dropdown_inner > ul li {
+.portfolio_mobile_menu .dropdown .dropdown_inner > ul li {
   margin: 0px;
   float: left;
   width: 100%;
 }
-.shane_tm_mobile_menu .dropdown .dropdown_inner > ul li a {
+.portfolio_mobile_menu .dropdown .dropdown_inner > ul li a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -454,7 +454,7 @@ h6 {
     line-height: 42px;
   }
 }
-.shane_tm_mobile_menu .logo img {
+.portfolio_mobile_menu .logo img {
   max-width: 100px;
 }
 .close_menu {
@@ -476,10 +476,10 @@ h6 {
   }
 }
 /*---------------------------------------------------*/
-/*	03) SHANE TOPBAR
+/*	03) PORTFOLIO TOPBAR
 /*---------------------------------------------------*/
 
-.shane_tm_topbar {
+.portfolio_topbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -487,7 +487,7 @@ h6 {
   z-index: 10;
   transition: all 0.3s ease;
 }
-.shane_tm_topbar .topbar_inner {
+.portfolio_topbar .topbar_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -497,31 +497,31 @@ h6 {
   padding: 25px 50px;
   transition: all 0.3s ease;
 }
-.shane_tm_topbar .topbar_inner.opened {
+.portfolio_topbar .topbar_inner.opened {
   background-color: #fff;
   padding: 20px 50px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
-.shane_tm_topbar .topbar_inner .logo a {
+.portfolio_topbar .topbar_inner .logo a {
   display: inline-block;
 }
 
-.shane_tm_topbar .menu ul {
+.portfolio_topbar .menu ul {
   margin: 0px;
   list-style-type: none;
 }
-.shane_tm_topbar .menu ul li {
+.portfolio_topbar .menu ul li {
   margin: 0px;
   display: inline-block;
 }
-.shane_tm_topbar .menu ul li {
+.portfolio_topbar .menu ul li {
   margin: 0px 25px 0px 0px;
   display: inline-block;
 }
-.shane_tm_topbar .menu ul li:last-child {
+.portfolio_topbar .menu ul li:last-child {
   margin-right: 0px;
 }
-.shane_tm_topbar .menu ul li a {
+.portfolio_topbar .menu ul li a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
@@ -533,7 +533,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_topbar .menu ul li a {
+.portfolio_topbar .menu ul li a {
   color: #222;
   position: relative;
   &::before {
@@ -547,7 +547,7 @@ h6 {
     transition: 0.3s;
   }
 }
-.shane_tm_topbar .menu ul li.current a {
+.portfolio_topbar .menu ul li.current a {
   &::before {
     width: 100%;
   }
@@ -571,9 +571,9 @@ h6 {
   }
 }
 /*---------------------------------------------------*/
-/*	04) SHANE HERO
+/*	04) PORTFOLIO HERO
 /*---------------------------------------------------*/
-.shane_tm_hero {
+.portfolio_hero {
   width: 100%;
   height: 100vh;
   float: left;
@@ -592,20 +592,20 @@ h6 {
   }
 }
 .slider-four {
-  .shane_tm_hero {
+  .portfolio_hero {
     @media screen and (max-width: 767px) {
       padding: 270px 0;
     }
   }
 }
-.shane_tm_hero .background {
+.portfolio_hero .background {
   position: absolute;
   right: 0px;
   top: 0px;
   bottom: 0px;
   width: 65%;
 }
-.shane_tm_hero .image {
+.portfolio_hero .image {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -615,42 +615,42 @@ h6 {
   background-position: center center;
   background-size: cover;
 }
-.shane_tm_hero[data-style="one"] .background {
+.portfolio_hero[data-style="one"] .background {
   clip-path: polygon(0% 100%, 21% 0%, 100% 0%, 100% 100%);
 }
-.shane_tm_hero[data-style="two"] .background {
+.portfolio_hero[data-style="two"] .background {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   // clip-path: polygon(0% 100%, 21% 0%, 100% 0%, 100% 100%);
 }
-.shane_tm_hero[data-style="three"] .background {
+.portfolio_hero[data-style="three"] .background {
   clip-path: polygon(0% 100%, 40% 0%, 100% 0%, 100% 100%);
   // clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   // clip-path: ellipse(70% 80% at 70% 50%);
 }
-.shane_tm_hero .container {
+.portfolio_hero .container {
   height: 100%;
 }
 
-.shane_tm_hero .content {
+.portfolio_hero .content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding-right: 20px;
 }
-.shane_tm_hero .name_wrap {
+.portfolio_hero .name_wrap {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   margin-bottom: 0;
 }
-.shane_tm_hero .job_wrap {
+.portfolio_hero .job_wrap {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_hero .content h3 {
+.portfolio_hero .content h3 {
   position: relative;
   font-size: 72px;
   font-family: "Montserrat";
@@ -661,7 +661,7 @@ h6 {
   display: inline-block;
   overflow: hidden;
 }
-.shane_tm_hero .content h3 span {
+.portfolio_hero .content h3 span {
   color: transparent;
   -webkit-text-stroke: 1px #000;
   padding-left: 2px;
@@ -669,7 +669,7 @@ h6 {
     -webkit-text-stroke: 1px #fff;
   }
 }
-.shane_tm_hero .content .job {
+.portfolio_hero .content .job {
   font-weight: 500;
   font-size: 17px;
   font-family: "Roboto";
@@ -734,29 +734,29 @@ body.loaded .overlay_effect:after {
     transform: translateX(100%);
   }
 }
-.shane_tm_down {
+.portfolio_down {
   position: absolute;
   z-index: 7;
   bottom: 50px;
   display: none;
 }
-.shane_tm_down.loaded {
+.portfolio_down.loaded {
   display: block;
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
-.shane_tm_down[data-position="left"] {
+.portfolio_down[data-position="left"] {
   left: 0px;
 }
-.shane_tm_down[data-position="right"] {
+.portfolio_down[data-position="right"] {
   right: 0px;
 }
-.shane_tm_down[data-position="center"] {
+.portfolio_down[data-position="center"] {
   left: 50%;
   transform: translateX(-50%);
 }
-.shane_tm_down .line_wrapper {
+.portfolio_down .line_wrapper {
   position: absolute;
   width: 1px;
   height: 100%;
@@ -774,13 +774,13 @@ body.loaded .overlay_effect:after {
   -o-transition: all 0.7s;
   transition: all 0.7s;
 }
-.shane_tm_down .line_wrapper {
+.portfolio_down .line_wrapper {
   width: 1px;
   height: 50px;
   background: none;
   display: block;
 }
-.shane_tm_down .line_wrapper:before {
+.portfolio_down .line_wrapper:before {
   content: "";
   background-color: #000;
   width: 1px;
@@ -808,14 +808,14 @@ body.loaded .overlay_effect:after {
   }
 }
 
-.shane_tm_down[data-skin="light"] .line_wrapper:before {
+.portfolio_down[data-skin="light"] .line_wrapper:before {
   background-color: #fff;
 }
 
 /*---------------------------------------------------*/
-/*	05) SHANE ABOUT
+/*	05) PORTFOLIO ABOUT
 /*---------------------------------------------------*/
-.shane_tm_about {
+.portfolio_about {
   width: 100%;
   height: auto;
   clear: both;
@@ -826,25 +826,25 @@ body.loaded .overlay_effect:after {
     padding: 60px 0px;
   }
 }
-.shane_tm_about .about_inner {
+.portfolio_about .about_inner {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
   align-items: center;
 }
-.shane_tm_about .left {
+.portfolio_about .left {
   width: 50%;
   padding-right: 50px;
 }
-.shane_tm_about .left .image {
+.portfolio_about .left .image {
   position: relative;
 }
-.shane_tm_about .left .image img {
+.portfolio_about .left .image img {
   min-width: 100%;
   opacity: 0;
 }
-.shane_tm_about .left .main {
+.portfolio_about .left .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -858,10 +858,10 @@ body.loaded .overlay_effect:after {
     box-shadow: none;
   }
 }
-.shane_tm_about .experience span {
+.portfolio_about .experience span {
   display: block;
 }
-.shane_tm_about .experience .year {
+.portfolio_about .experience .year {
   font-size: 80px;
   font-weight: 800;
   font-family: "Poppins";
@@ -870,27 +870,27 @@ body.loaded .overlay_effect:after {
   line-height: 1;
   font-style: italic;
 }
-.shane_tm_about .experience .text {
+.portfolio_about .experience .text {
   color: #fff;
   font-style: italic;
   font-family: "Poppins";
   opacity: 0.7;
 }
-.shane_tm_about .right {
+.portfolio_about .right {
   width: 50%;
   padding-left: 50px;
 }
-.shane_tm_title {
+.portfolio_title {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_title h3 {
+.portfolio_title h3 {
   font-weight: 800;
   font-family: "Poppins";
 }
-.shane_tm_title span {
+.portfolio_title span {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
@@ -902,7 +902,7 @@ body.loaded .overlay_effect:after {
   letter-spacing: 0px;
   margin-bottom: 15px;
 }
-.shane_tm_about .right .text {
+.portfolio_about .right .text {
   width: 100%;
   height: auto;
   clear: both;
@@ -910,13 +910,21 @@ body.loaded .overlay_effect:after {
   margin-bottom: 40px;
   padding-top: 27px;
 }
-.shane_tm_about_buttons {
+.portfolio_about .left .text {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 40px;
+  padding-top: 27px;
+}
+.portfolio_about_buttons {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.shane_tm_projects_button {
-  .shane_tm_button {
+.portfolio_projects_button {
+  .portfolio_button {
     width: fit-content;
     height: auto;
     clear: both;
@@ -924,13 +932,13 @@ body.loaded .overlay_effect:after {
     margin: auto;
   }
 }
-.shane_tm_button {
+.portfolio_button {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_button a {
+.portfolio_button a {
   text-decoration: none;
   color: #fff;
   background-color: #000;
@@ -943,17 +951,17 @@ body.loaded .overlay_effect:after {
     padding: 8px 25px;
   }
 }
-.shane_tm_button a:hover {
+.portfolio_button a:hover {
   color: #000;
   background-color: transparent;
   transform: translateY(-3px);
 }
 
 /*---------------------------------------------------*/
-/*	06) SHANE PORTFOLIO
+/*	06) PORTFOLIO PORTFOLIO
 /*---------------------------------------------------*/
 
-.shane_tm_title .title_flex {
+.portfolio_title .title_flex {
   width: 100%;
   height: auto;
   clear: both;
@@ -961,12 +969,12 @@ body.loaded .overlay_effect:after {
   justify-content: space-between;
   align-items: flex-end;
 }
-.shane_tm_portfolio .portfolio_filter ul {
+.portfolio_portfolio .portfolio_filter ul {
   margin: 0px;
   list-style-type: none;
 }
 
-.shane_tm_portfolio .portfolio_filter {
+.portfolio_portfolio .portfolio_filter {
   ul.react-tabs__tab-list {
     li {
       text-decoration: none;
@@ -996,7 +1004,7 @@ body.loaded .overlay_effect:after {
     }
   }
 }
-.shane_tm_portfolio {
+.portfolio_portfolio {
   width: 100%;
   height: auto;
   clear: both;
@@ -1008,24 +1016,24 @@ body.loaded .overlay_effect:after {
     padding: 60px 0px 40px;
   }
 }
-.shane_tm_portfolio .portfolio_list {
+.portfolio_portfolio .portfolio_list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding-top: 50px;
 }
-.shane_tm_portfolio .portfolio_list ul {
+.portfolio_portfolio .portfolio_list ul {
   margin: 0px 0px 0px -50px;
   list-style-type: none;
 }
-.shane_tm_portfolio .portfolio_list ul li {
+.portfolio_portfolio .portfolio_list ul li {
   margin: 0px 0px 50px 0px;
   width: 33.3333%;
   float: left;
   padding-left: 50px;
 }
-.shane_tm_portfolio .portfolio_list ul li .inner {
+.portfolio_portfolio .portfolio_list ul li .inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1043,13 +1051,13 @@ body.loaded .overlay_effect:after {
     }
   }
 }
-.shane_tm_portfolio .portfolio_list .image {
+.portfolio_portfolio .portfolio_list .image {
   position: relative;
 }
-.shane_tm_portfolio .portfolio_list .inner img {
+.portfolio_portfolio .portfolio_list .inner img {
   min-width: 100%;
 }
-.shane_tm_portfolio .portfolio_list .inner a img {
+.portfolio_portfolio .portfolio_list .inner a img {
   height: 339px;
   object-fit: cover;
   transition: transform 1s cubic-bezier(0, 0, 0.2, 1);
@@ -1064,7 +1072,7 @@ ul.react-tabs__tab-list {
     top: 15px;
   }
 }
-.shane_tm_portfolio .portfolio_list .main {
+.portfolio_portfolio .portfolio_list .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1081,10 +1089,10 @@ ul.react-tabs__tab-list {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.shane_tm_portfolio .portfolio_list ul li .inner:hover .main {
+.portfolio_portfolio .portfolio_list ul li .inner:hover .main {
   clip-path: inset(2% 2% 2% 2%);
 }
-.shane_tm_portfolio_titles {
+.portfolio_portfolio_titles {
   white-space: nowrap;
   background: #ffffff;
   font-size: 18px;
@@ -1097,11 +1105,11 @@ ul.react-tabs__tab-list {
   opacity: 0;
   visibility: hidden;
 }
-.shane_tm_portfolio_titles.visible {
+.portfolio_portfolio_titles.visible {
   opacity: 1;
   visibility: visible;
 }
-.shane_tm_portfolio_titles .work__cat {
+.portfolio_portfolio_titles .work__cat {
   position: absolute;
   background: #ffffff;
   top: 100%;
@@ -1115,12 +1123,12 @@ ul.react-tabs__tab-list {
 .entry {
   position: relative;
 }
-.shane_tm_portfolio .mobile_title {
+.portfolio_portfolio .mobile_title {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.85);
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -1131,23 +1139,45 @@ ul.react-tabs__tab-list {
   transform: translateY(100%);
   cursor: default;
   transition: transform 0.5s;
-  pointer-events: none;
+  // pointer-events: none;
 }
-.shane_tm_portfolio .mobile_title h3 {
+.portfolio_portfolio .mobile_title h3 {
   font-size: 18px;
   font-weight: 600;
 }
-.shane_tm_portfolio .mobile_title span {
+.portfolio_portfolio .mobile_title span {
   font-family: "Poppins";
   font-weight: 500;
   color: #000;
 }
+.portfolio_portfolio .mobile_title a {
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  svg{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  &:hover{
+    font-size: 17px;
+    color: #000;
+    svg{
+      height: 22px;
+      width: 22px;
+      margin-left: 10px;
+    }
+  }
+}
 
 /*---------------------------------------------------*/
-/*	07) SHANE SKILLS
+/*	07) PORTFOLIO SKILLS
 /*---------------------------------------------------*/
 
-.shane_tm_skills {
+.portfolio_skills {
   width: 100%;
   height: auto;
   clear: both;
@@ -1157,17 +1187,17 @@ ul.react-tabs__tab-list {
     padding: 60px 0;
   }
 }
-.shane_tm_skills .skills_inner {
+.portfolio_skills .skills_inner {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
 }
-.shane_tm_skills .left {
+.portfolio_skills .left {
   width: 50%;
   padding-right: 50px;
 }
-.shane_tm_skills .text {
+.portfolio_skills .text {
   padding-top: 27px;
   float: left;
 }
@@ -1245,36 +1275,36 @@ ul.react-tabs__tab-list {
   }
 }
 
-.shane_tm_skills .right {
+.portfolio_skills .right {
   width: 50%;
   padding-left: 50px;
 }
 
 /*---------------------------------------------------*/
-/*	08) SHANE VIDEO
+/*	08) PORTFOLIO VIDEO
 /*---------------------------------------------------*/
 
-.shane_tm_business_video {
+.portfolio_business_video {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_business_video {
+.portfolio_business_video {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   position: relative;
 }
-.shane_tm_business_video .bg {
+.portfolio_business_video .bg {
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
 }
-.shane_tm_business_video .bg .image {
+.portfolio_business_video .bg .image {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1284,7 +1314,7 @@ ul.react-tabs__tab-list {
   background-size: cover;
   background-position: center;
 }
-.shane_tm_business_video .bg .overlay {
+.portfolio_business_video .bg .overlay {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1293,7 +1323,7 @@ ul.react-tabs__tab-list {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.shane_tm_business_video .content {
+.portfolio_business_video .content {
   width: 100%;
   height: auto;
   clear: both;
@@ -1307,7 +1337,7 @@ ul.react-tabs__tab-list {
     padding: 75px 15px;
   }
 }
-.shane_tm_business_video .rounded {
+.portfolio_business_video .rounded {
   width: 100px;
   height: 100px;
   display: block;
@@ -1329,7 +1359,7 @@ ul.react-tabs__tab-list {
     transform: translateX(-50%) scale3d(1.15, 1.15, 1.15);
   }
 }
-.shane_tm_business_video .rounded:before {
+.portfolio_business_video .rounded:before {
   position: absolute;
   content: "";
   width: 0;
@@ -1342,7 +1372,7 @@ ul.react-tabs__tab-list {
   margin-left: 4px;
   transform: translate(-50%, -50%);
 }
-.shane_tm_business_video .text {
+.portfolio_business_video .text {
   color: #fff;
   font-family: "Poppins";
   font-size: 30px;
@@ -1351,14 +1381,14 @@ ul.react-tabs__tab-list {
   margin-bottom: 50px;
   font-weight: 800;
 }
-.shane_tm_video_button {
+.portfolio_video_button {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_video_button a,
-.shane_tm_video_button button {
+.portfolio_video_button a,
+.portfolio_video_button button {
   text-decoration: none;
   color: #fff;
   background-color: transparent;
@@ -1369,31 +1399,31 @@ ul.react-tabs__tab-list {
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
 }
-.shane_tm_video_button button {
+.portfolio_video_button button {
   font-size: 16px;
   @media screen and (max-width: 767px) {
     font-size: 15px;
     padding: 10px 25px;
   }
 }
-.shane_tm_video_button a:hover,
-.shane_tm_video_button button:hover {
+.portfolio_video_button a:hover,
+.portfolio_video_button button:hover {
   color: #000;
   background-color: #fff;
   transform: translateY(-3px);
 }
 
 /*---------------------------------------------------*/
-/*	09) SHANE PARTNERS
+/*	09) PORTFOLIO PARTNERS
 /*---------------------------------------------------*/
 
-.shane_tm_partners {
+.portfolio_partners {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_partners .partners_inner {
+.portfolio_partners .partners_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1403,11 +1433,11 @@ ul.react-tabs__tab-list {
     padding: 35px 0px 25px;
   }
 }
-.shane_tm_partners .partners_inner ul {
+.portfolio_partners .partners_inner ul {
   margin: 0px;
   list-style-type: none;
 }
-.shane_tm_partners .partners_inner ul li {
+.portfolio_partners .partners_inner ul li {
   margin: 0px;
   opacity: 0.5;
 
@@ -1417,19 +1447,19 @@ ul.react-tabs__tab-list {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_partners .partners_inner ul li {
+.portfolio_partners .partners_inner ul li {
   max-width: 200px;
   max-height: 200px;
 }
-.shane_tm_partners .partners_inner ul li:hover {
+.portfolio_partners .partners_inner ul li:hover {
   opacity: 1;
 }
 
 /*---------------------------------------------------*/
-/*	10) SHANE TESTIMONIALS
+/*	10) PORTFOLIO TESTIMONIALS
 /*---------------------------------------------------*/
 
-.shane_tm_testimonials {
+.portfolio_testimonials {
   width: 100%;
   height: auto;
   clear: both;
@@ -1440,46 +1470,46 @@ ul.react-tabs__tab-list {
     padding: 60px 0px;
   }
 }
-.shane_tm_testimonials .testimonials_inner {
+.portfolio_testimonials .testimonials_inner {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
   justify-content: space-between;
 }
-.shane_tm_testimonials .left {
+.portfolio_testimonials .left {
   width: 50%;
   padding-right: 50px;
 }
-.shane_tm_testimonials .right {
+.portfolio_testimonials .right {
   width: 50%;
   padding-left: 50px;
 }
-.shane_tm_testimonials .right ul {
+.portfolio_testimonials .right ul {
   margin: 0px;
   list-style-type: none;
 }
-.shane_tm_testimonials .right ul li {
+.portfolio_testimonials .right ul li {
   margin: 0px;
 }
-.shane_tm_testimonials .right .texts p {
+.portfolio_testimonials .right .texts p {
   margin-bottom: 40px;
 }
-.shane_tm_testimonials .right .author {
+.portfolio_testimonials .right .author {
   width: 100%;
   height: auto;
   clear: both;
   display: flex;
   align-items: center;
 }
-.shane_tm_testimonials .right .author .image {
+.portfolio_testimonials .right .author .image {
   width: 65px;
   height: 65px;
   border-radius: 100%;
   position: relative;
   overflow: hidden;
 }
-.shane_tm_testimonials .right .author .main {
+.portfolio_testimonials .right .author .main {
   position: absolute;
   top: -4px;
   bottom: -4px;
@@ -1499,7 +1529,7 @@ ul.react-tabs__tab-list {
 
   transform: scale(1.5) translateZ(0);
 }
-.shane_tm_testimonials
+.portfolio_testimonials
   .right
   .slick-slide.slick-active.slick-current
   .author
@@ -1508,17 +1538,17 @@ ul.react-tabs__tab-list {
   transition: all 1s 0.3s ease;
   transform: scale(1) translateZ(0);
 }
-.shane_tm_testimonials .right .short {
+.portfolio_testimonials .right .short {
   padding-left: 25px;
 }
-.shane_tm_testimonials .right .short h3 {
+.portfolio_testimonials .right .short h3 {
   overflow: hidden;
   margin: 0px;
   padding: 0px;
   line-height: 1;
   position: relative;
 }
-.shane_tm_testimonials .right .short .author {
+.portfolio_testimonials .right .short .author {
   font-family: "Montserrat";
   font-size: 18px;
   color: #000;
@@ -1526,13 +1556,13 @@ ul.react-tabs__tab-list {
   margin-bottom: 0px;
   margin-bottom: 5px;
 }
-.shane_tm_testimonials .right .short .job {
+.portfolio_testimonials .right .short .job {
   font-weight: 400;
   display: block;
   font-size: 15px;
 }
-.shane_tm_testimonials .right .short .author span,
-.shane_tm_testimonials .right .short .job span {
+.portfolio_testimonials .right .short .author span,
+.portfolio_testimonials .right .short .job span {
   position: relative;
   display: block;
   padding: 2px 0px;
@@ -1544,7 +1574,7 @@ ul.react-tabs__tab-list {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-.shane_tm_testimonials
+.portfolio_testimonials
   .right
   .slick-slide.slick-active.slick-current
   .short
@@ -1553,7 +1583,7 @@ ul.react-tabs__tab-list {
   transform: translateY(0px);
   transition-delay: 0.3s;
 }
-.shane_tm_testimonials
+.portfolio_testimonials
   .right
   .slick-slide.slick-active.slick-current
   .short
@@ -1564,10 +1594,10 @@ ul.react-tabs__tab-list {
 }
 
 /*---------------------------------------------------*/
-/*	11) SHANE NEWS
+/*	11) PORTFOLIO NEWS
 /*---------------------------------------------------*/
 
-.shane_tm_news {
+.portfolio_news {
   width: 100%;
   height: auto;
   clear: both;
@@ -1577,7 +1607,7 @@ ul.react-tabs__tab-list {
     padding: 60px 0px 10px;
   }
 }
-.shane_tm_news .news_list {
+.portfolio_news .news_list {
   width: 100%;
   height: auto;
   clear: both;
@@ -1587,34 +1617,34 @@ ul.react-tabs__tab-list {
     padding-top: 35px;
   }
 }
-.shane_tm_news .news_list ul {
+.portfolio_news .news_list ul {
   margin: 0px 0px 0px -50px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
-.shane_tm_news .news_list ul li {
+.portfolio_news .news_list ul li {
   margin: 0px 0px 50px 0px;
   float: left;
   width: 33.3333%;
   padding-left: 50px;
 }
-.shane_tm_news .news_list ul li .list_inner {
+.portfolio_news .news_list ul li .list_inner {
   width: 100%;
   height: 100%;
   clear: both;
   float: left;
   position: relative;
 }
-.shane_tm_news .news_list ul li .image {
+.portfolio_news .news_list ul li .image {
   position: relative;
   overflow: hidden;
 }
-.shane_tm_news .news_list ul li .image img {
+.portfolio_news .news_list ul li .image img {
   min-width: 100%;
   opacity: 0;
 }
-.shane_tm_news .news_list ul li .image .main {
+.portfolio_news .news_list ul li .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1627,16 +1657,16 @@ ul.react-tabs__tab-list {
   transition: all 1s cubic-bezier(0, 0, 0.1, 1);
   cursor: pointer;
 }
-.shane_tm_news .news_list ul li .list_inner:hover .main {
+.portfolio_news .news_list ul li .list_inner:hover .main {
   transform: scale(1.1) rotate(3deg);
 }
-.shane_tm_news .news_list ul li .details {
+.portfolio_news .news_list ul li .details {
   width: 100%;
   float: left;
   padding-right: 15px;
   padding-top: 32px;
 }
-.shane_tm_news .news_list ul li .details .title {
+.portfolio_news .news_list ul li .details .title {
   margin-bottom: 10px;
   text-decoration: none;
   color: #000;
@@ -1650,17 +1680,17 @@ ul.react-tabs__tab-list {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.shane_tm_news .news_list ul li .details .title:hover {
+.portfolio_news .news_list ul li .details .title:hover {
   color: #000;
 }
-.shane_tm_news .news_list ul li .details .date {
+.portfolio_news .news_list ul li .details .date {
   text-transform: uppercase;
   font-family: "Poppins";
   font-size: 12px;
   color: #767676;
   font-style: italic;
 }
-.shane_tm_news .news_list ul li .details .date a {
+.portfolio_news .news_list ul li .details .date a {
   text-decoration: none;
   color: #767676;
 
@@ -1670,14 +1700,14 @@ ul.react-tabs__tab-list {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_news .news_list ul li .details .date a:hover {
+.portfolio_news .news_list ul li .details .date a:hover {
   color: #000;
 }
-.shane_tm_news .news_list ul li .details .date span {
+.portfolio_news .news_list ul li .details .date span {
   position: relative;
   margin-left: 11px;
 }
-.shane_tm_news .news_list ul li .details .date span:before {
+.portfolio_news .news_list ul li .details .date span:before {
   position: absolute;
   content: "";
   margin-top: 1px;
@@ -1689,7 +1719,7 @@ ul.react-tabs__tab-list {
   height: 9px;
   margin-right: 7px;
 }
-.shane_tm_news .description {
+.portfolio_news .description {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -1700,47 +1730,47 @@ body.modal {
   overflow: hidden;
 }
 
-.shane_tm_modalbox_news .close {
+.portfolio_modalbox_news .close {
   position: fixed;
   left: 100%;
   top: 0px;
   margin-left: 40px;
   z-index: 20;
 }
-.shane_tm_modalbox_news .close a {
+.portfolio_modalbox_news .close a {
   text-decoration: none;
   color: #fff;
 }
-.shane_tm_modalbox_news .close .svg {
+.portfolio_modalbox_news .close .svg {
   width: 50px;
   height: 50px;
 }
-.shane_tm_modalbox_news .description_wrap {
+.portfolio_modalbox_news .description_wrap {
   position: relative;
   width: 100%;
   float: left;
   padding: 50px;
 }
-.shane_tm_modalbox_news .details {
+.portfolio_modalbox_news .details {
   width: 100%;
   float: left;
   margin-bottom: 27px;
 }
-.shane_tm_modalbox_news .description {
+.portfolio_modalbox_news .description {
   width: 100%;
   float: left;
 }
-.shane_tm_modalbox_news .description p {
+.portfolio_modalbox_news .description p {
   margin-bottom: 15px;
 }
-.shane_tm_modalbox_news .description blockquote {
+.portfolio_modalbox_news .description blockquote {
   font-style: italic;
   color: #000;
   border-left: 2px solid #000;
   padding-left: 20px;
   margin-bottom: 15px;
 }
-.shane_tm_modalbox_news .description_wrap .image {
+.portfolio_modalbox_news .description_wrap .image {
   position: relative;
   height: 450px;
   z-index: -1;
@@ -1749,10 +1779,10 @@ body.modal {
     height: auto;
   }
 }
-.shane_tm_modalbox_news .description_wrap .image img {
+.portfolio_modalbox_news .description_wrap .image img {
   min-width: 100%;
 }
-.shane_tm_modalbox_news .description_wrap .image .main {
+.portfolio_modalbox_news .description_wrap .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1762,21 +1792,21 @@ body.modal {
   background-position: center;
   background-size: cover;
 }
-.shane_tm_modalbox_news .details .title {
+.portfolio_modalbox_news .details .title {
   font-weight: 600;
   margin-bottom: 8px;
   @media (max-width: 767px) {
     font-size: 22px;
   }
 }
-.shane_tm_modalbox_news .date {
+.portfolio_modalbox_news .date {
   text-transform: uppercase;
   font-family: "Poppins";
   font-size: 12px;
   color: #767676;
   font-style: italic;
 }
-.shane_tm_modalbox_news .date a {
+.portfolio_modalbox_news .date a {
   text-decoration: none;
   color: #767676;
 
@@ -1786,14 +1816,14 @@ body.modal {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_modalbox_news .date a:hover {
+.portfolio_modalbox_news .date a:hover {
   color: #e54b4b;
 }
-.shane_tm_modalbox_news .date span {
+.portfolio_modalbox_news .date span {
   position: relative;
   margin-left: 11px;
 }
-.shane_tm_modalbox_news .date span:before {
+.portfolio_modalbox_news .date span:before {
   position: absolute;
   content: "";
   margin-top: 0px;
@@ -1805,7 +1835,7 @@ body.modal {
   height: 9px;
   margin-right: 7px;
 }
-.shane_tm_modalbox_news .share {
+.portfolio_modalbox_news .share {
   width: 100%;
   height: auto;
   clear: both;
@@ -1813,25 +1843,25 @@ body.modal {
   align-items: center;
   padding-top: 14px;
 }
-.shane_tm_modalbox_news .share span {
+.portfolio_modalbox_news .share span {
   font-family: "Poppins";
   color: #000;
   font-weight: 600;
   display: inline-block;
   padding-right: 20px;
 }
-.shane_tm_modalbox_news .share ul {
+.portfolio_modalbox_news .share ul {
   margin: 0px;
   list-style-type: none;
 }
-.shane_tm_modalbox_news .share ul li {
+.portfolio_modalbox_news .share ul li {
   margin: 0px 15px 0px 0px;
   display: inline-block;
 }
-.shane_tm_modalbox_news .share ul li:last-child {
+.portfolio_modalbox_news .share ul li:last-child {
   margin-right: 0px;
 }
-.shane_tm_modalbox_news .share ul li a {
+.portfolio_modalbox_news .share ul li a {
   text-decoration: none;
   color: #000;
   img {
@@ -1840,7 +1870,7 @@ body.modal {
     }
   }
 }
-.shane_tm_full_link {
+.portfolio_full_link {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1850,10 +1880,10 @@ body.modal {
 }
 
 /*---------------------------------------------------*/
-/*	12) SHANE TALK
+/*	12) PORTFOLIO TALK
 /*---------------------------------------------------*/
 
-.shane_tm_talk {
+.portfolio_talk {
   width: 100%;
   height: auto;
   clear: both;
@@ -1864,7 +1894,7 @@ body.modal {
     padding: 150px 0;
   }
 }
-.shane_tm_talk .talk_inner {
+.portfolio_talk .talk_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -1876,11 +1906,11 @@ body.modal {
   z-index: 3;
   overflow: hidden;
 }
-.shane_tm_talk .text {
+.portfolio_talk .text {
   margin-bottom: 35px;
   text-align: center;
 }
-.shane_tm_talk .text h3 {
+.portfolio_talk .text h3 {
   color: #fff;
   font-weight: 800;
   font-size: 72px;
@@ -1942,14 +1972,14 @@ body.modal {
     }
   }
 }
-.shane_tm_talk .background {
+.portfolio_talk .background {
   position: absolute;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
 }
-.shane_tm_talk .overlay {
+.portfolio_talk .overlay {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1959,7 +1989,7 @@ body.modal {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.shane_tm_talk .shape {
+.portfolio_talk .shape {
   position: absolute;
   width: 100%;
   left: 0px;
@@ -1967,16 +1997,16 @@ body.modal {
   z-index: 2;
   transform: rotate(180deg);
 }
-.shane_tm_talk .shape .svg {
+.portfolio_talk .shape .svg {
   width: 100%;
   height: 100%;
 }
 
 /*---------------------------------------------------*/
-/*	13) SHANE COPYRIGHT
+/*	13) PORTFOLIO COPYRIGHT
 /*---------------------------------------------------*/
 
-.shane_tm_copyright {
+.portfolio_copyright {
   width: 100%;
   height: auto;
   clear: both;
@@ -1984,37 +2014,37 @@ body.modal {
   background-color: #000;
   padding: 50px 0px;
 }
-.shane_tm_copyright .inner {
+.portfolio_copyright .inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   text-align: center;
 }
-.shane_tm_copyright p {
+.portfolio_copyright p {
   font-family: "Poppins";
   color: #fff;
 }
-.shane_tm_copyright a {
+.portfolio_copyright a {
   text-decoration: none;
   color: #fff;
 }
 
 /*---------------------------------------------------*/
-/*	14) SHANE MODALBOX CONTACT
+/*	14) PORTFOLIO MODALBOX CONTACT
 /*---------------------------------------------------*/
 
-.shane_tm_mobalbox_contact .description_wrap {
+.portfolio_mobalbox_contact .description_wrap {
   position: relative;
   width: 100%;
   height: 100%;
   float: left;
   padding: 50px;
 }
-.shane_tm_mobalbox_contact .title h3 {
+.portfolio_mobalbox_contact .title h3 {
   font-weight: 800;
 }
-.shane_tm_mobalbox_contact .wrapper {
+.portfolio_mobalbox_contact .wrapper {
   width: 100%;
   height: auto;
   clear: both;
@@ -2022,55 +2052,55 @@ body.modal {
   padding-top: 31px;
   margin-bottom: 50px;
 }
-.shane_tm_mobalbox_contact .desc {
+.portfolio_mobalbox_contact .desc {
   max-width: 50%;
   float: left;
   padding-top: 95px;
 }
-.shane_tm_mobalbox_contact .left {
+.portfolio_mobalbox_contact .left {
   width: 50%;
   padding-right: 25px;
 }
-.shane_tm_mobalbox_contact .fields {
+.portfolio_mobalbox_contact .fields {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_mobalbox_contact .fields .first {
+.portfolio_mobalbox_contact .fields .first {
   width: 100%;
   float: left;
 }
-.shane_tm_mobalbox_contact .fields ul {
+.portfolio_mobalbox_contact .fields ul {
   margin: 0px;
   list-style-type: none;
 }
-.shane_tm_mobalbox_contact .fields ul li {
+.portfolio_mobalbox_contact .fields ul li {
   width: 100%;
   margin: 0px 0px 30px 0px;
   float: left;
 }
-.shane_tm_mobalbox_contact .fields ul li input {
+.portfolio_mobalbox_contact .fields ul li input {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
-.shane_tm_mobalbox_contact .fields ul li input:focus {
+.portfolio_mobalbox_contact .fields ul li input:focus {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.shane_tm_mobalbox_contact .fields textarea {
+.portfolio_mobalbox_contact .fields textarea {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 120px;
   resize: none;
   background-color: #fff;
 }
-.shane_tm_mobalbox_contact .fields .last textarea:focus {
+.portfolio_mobalbox_contact .fields .last textarea:focus {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.shane_tm_mobalbox_contact .empty_notice {
+.portfolio_mobalbox_contact .empty_notice {
   color: #f52225;
   margin-bottom: 7px;
   display: none;
@@ -2082,19 +2112,19 @@ body.modal {
   text-align: left;
   font-weight: 400;
 }
-.shane_tm_mobalbox_contact .returnmessage {
+.portfolio_mobalbox_contact .returnmessage {
   color: #3a00ff;
   margin-bottom: 7px;
   text-align: left;
   font-weight: 500;
 }
-.shane_tm_mobalbox_contact .right {
+.portfolio_mobalbox_contact .right {
   width: 50%;
   padding-left: 25px;
   position: relative;
-  top: 6px;
+  // top: 6px;
 }
-.shane_tm_mobalbox_contact .map_wrap {
+.portfolio_mobalbox_contact .map_wrap {
   height: auto;
   .map > div {
     height: 360px !important;
@@ -2104,25 +2134,25 @@ body.modal {
     }
   }
 }
-.shane_tm_mobalbox_contact .short_info {
+.portfolio_mobalbox_contact .short_info {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   padding-bottom: 20px;
 }
-.shane_tm_mobalbox_contact .short_info > ul {
+.portfolio_mobalbox_contact .short_info > ul {
   margin: 0px 0px 0px -50px;
   list-style-type: none;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li {
+.portfolio_mobalbox_contact .short_info > ul > li {
   margin: 0px 0px 30px 0px;
   float: left;
   width: 50%;
   padding-left: 35px;
   text-align: center;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li .list_inner {
+.portfolio_mobalbox_contact .short_info > ul > li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -2131,12 +2161,12 @@ body.modal {
   background-color: #000;
   padding: 50px 15px;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li p {
+.portfolio_mobalbox_contact .short_info > ul > li p {
   font-family: "Poppins";
   font-weight: 500;
   color: #fff;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li a {
+.portfolio_mobalbox_contact .short_info > ul > li a {
   text-decoration: none;
   color: #fff;
 
@@ -2146,46 +2176,46 @@ body.modal {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li a:hover {
+.portfolio_mobalbox_contact .short_info > ul > li a:hover {
   color: #fff;
 }
-.shane_tm_mobalbox_contact .short_info > ul > li .svg {
+.portfolio_mobalbox_contact .short_info > ul > li .svg {
   width: 30px;
   height: 30px;
   margin-bottom: 12px;
   filter: invert(1);
 }
-.shane_tm_mobalbox_contact .social {
+.portfolio_mobalbox_contact .social {
   margin: 0px;
   list-style-type: none;
   position: relative;
   top: 11px;
 }
-.shane_tm_mobalbox_contact .social li {
+.portfolio_mobalbox_contact .social li {
   margin: 0px 15px 0px 0px;
   display: inline-block;
   width: auto !important;
 }
-.shane_tm_mobalbox_contact .social li:last-child {
+.portfolio_mobalbox_contact .social li:last-child {
   margin-right: 0px;
 }
-.shane_tm_mobalbox_contact .social li a {
+.portfolio_mobalbox_contact .social li a {
   text-decoration: none;
   color: #fff;
 }
-.shane_tm_mobalbox_contact .social li .svg {
+.portfolio_mobalbox_contact .social li .svg {
   width: 15px !important;
   height: 15px !important;
 }
-.shane_tm_mobalbox_contact .share > span {
+.portfolio_mobalbox_contact .share > span {
   display: none;
 }
-.shane_tm_mobile_menu .white-fill-bg.btn_sm {
+.portfolio_mobile_menu .white-fill-bg.btn_sm {
   @media screen and (min-width: 768px) and (max-width: 1040px) {
     padding: 5px 40px !important;
   }
 }
-.shane_tm_mobile_menu .dropdown {
+.portfolio_mobile_menu .dropdown {
   &.active {
     ul {
       li {
@@ -2266,7 +2296,7 @@ body.modal {
   animation-name: customThree;
 }
 /*---------------------------------------------------*/
-/*	15) SHANE CURSOR
+/*	15) PORTFOLIO CURSOR
 /*---------------------------------------------------*/
 
 .mouse-cursor {
@@ -2315,7 +2345,7 @@ body.modal {
 .cursor-outer.cursor-hover {
   opacity: 0;
 }
-.shane_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+.portfolio_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -2324,10 +2354,10 @@ body.modal {
 }
 
 /*---------------------------------------------------*/
-/*  SHANE SETTINGS
+/*  PORTFOLIO SETTINGS
 /*---------------------------------------------------*/
 
-.shane_tm_settings {
+.portfolio_settings {
   position: fixed;
   z-index: 200;
   top: 15%;
@@ -2342,29 +2372,29 @@ body.modal {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.shane_tm_settings.opened {
+.portfolio_settings.opened {
   right: 0px;
 }
-.shane_tm_settings .wrapper {
+.portfolio_settings .wrapper {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_settings .icon {
+.portfolio_settings .icon {
   position: absolute;
   top: 0px;
   right: 100%;
   background-color: #000;
   padding: 12px 12px 4px 12px;
 }
-.shane_tm_settings .icon .svg {
+.portfolio_settings .icon .svg {
   color: #fff;
   width: 25px;
   height: 25px;
   animation: fa-spin 2s infinite linear;
 }
-.shane_tm_settings .link {
+.portfolio_settings .link {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -2393,14 +2423,14 @@ body.modal {
     transform: rotate(359deg);
   }
 }
-.shane_tm_settings .title {
+.portfolio_settings .title {
   color: #fff;
   font-family: "Montserrat";
   font-weight: 600;
   position: relative;
   display: inline-block;
 }
-.shane_tm_settings .title:before {
+.portfolio_settings .title:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -2409,111 +2439,111 @@ body.modal {
   left: 0px;
   bottom: 0px;
 }
-.shane_tm_settings .colors {
+.portfolio_settings .colors {
   margin: 0px 0px 22px 0px;
   list-style-type: none;
   padding-top: 32px;
 }
-.shane_tm_settings .colors li {
+.portfolio_settings .colors li {
   margin: 0px;
   display: inline-block;
 }
-.shane_tm_settings .colors li a {
+.portfolio_settings .colors li a {
   text-decoration: none;
   display: inline-block;
   width: 30px;
   height: 30px;
   border-radius: 100%;
 }
-.shane_tm_settings .direction {
+.portfolio_settings .direction {
   list-style-type: none;
   margin: 0px;
 }
-.shane_tm_settings .direction li {
+.portfolio_settings .direction li {
   margin: 0px 20px 0px 0px;
   display: inline-block;
 }
-.shane_tm_settings .direction li a {
+.portfolio_settings .direction li a {
   opacity: 0.4;
   text-decoration: none;
   color: #fff;
 }
-.shane_tm_settings .direction li a.active {
+.portfolio_settings .direction li a.active {
   opacity: 1;
 }
-.shane_tm_settings .direction li .svg {
+.portfolio_settings .direction li .svg {
   width: 25px;
   height: 25px;
 }
-.shane_tm_settings .colors li.bl {
+.portfolio_settings .colors li.bl {
   display: inline-block;
 }
-.shane_tm_settings .colors li.wh {
+.portfolio_settings .colors li.wh {
   display: none;
 }
-body.dark .shane_tm_settings .colors li.bl,
-.shane_tm_settings.changed .colors li.bl {
+body.dark .portfolio_settings .colors li.bl,
+.portfolio_settings.changed .colors li.bl {
   display: none;
 }
-body.dark .shane_tm_settings .colors li.wh,
-.shane_tm_settings.changed .colors li.wh {
+body.dark .portfolio_settings .colors li.wh,
+.portfolio_settings.changed .colors li.wh {
   display: inline-block;
 }
-body.dark .shane_tm_settings,
-.shane_tm_settings.changed {
+body.dark .portfolio_settings,
+.portfolio_settings.changed {
   background-color: #fff;
 }
-body.dark .shane_tm_settings .icon,
-.shane_tm_settings.changed .icon {
+body.dark .portfolio_settings .icon,
+.portfolio_settings.changed .icon {
   background-color: #fff;
 }
-body.dark .shane_tm_settings .icon .svg,
-.shane_tm_settings.changed .icon .svg {
+body.dark .portfolio_settings .icon .svg,
+.portfolio_settings.changed .icon .svg {
   color: #000;
 }
-body.dark .shane_tm_settings .title,
-.shane_tm_settings.changed .title {
+body.dark .portfolio_settings .title,
+.portfolio_settings.changed .title {
   color: #000;
 }
-body.dark .shane_tm_settings .title:before,
-.shane_tm_settings.changed .title:before {
+body.dark .portfolio_settings .title:before,
+.portfolio_settings.changed .title:before {
   background-color: rgba(0, 0, 0, 0.5);
 }
-body.dark .shane_tm_settings .direction li a,
-.shane_tm_settings.changed .direction li a {
+body.dark .portfolio_settings .direction li a,
+.portfolio_settings.changed .direction li a {
   color: #000;
 }
-body.dark .shane_tm_settings .cursor li:nth-child(1) a,
-.shane_tm_settings.changed .cursor li:nth-child(1) a {
+body.dark .portfolio_settings .cursor li:nth-child(1) a,
+.portfolio_settings.changed .cursor li:nth-child(1) a {
   border-color: #000;
 }
-body.dark .shane_tm_settings .cursor li:nth-child(1) a:before,
-.shane_tm_settings.changed .cursor li:nth-child(1) a:before {
+body.dark .portfolio_settings .cursor li:nth-child(1) a:before,
+.portfolio_settings.changed .cursor li:nth-child(1) a:before {
   background-color: #000;
 }
-body.dark .shane_tm_settings .cursor li .svg,
-.shane_tm_settings.changed .cursor li .svg {
+body.dark .portfolio_settings .cursor li .svg,
+.portfolio_settings.changed .cursor li .svg {
   color: #000;
 }
-.shane_tm_settings .cursor {
+.portfolio_settings .cursor {
   margin: 0px;
   list-style-type: none;
   padding-top: 15px;
 }
-.shane_tm_settings .cursor li {
+.portfolio_settings .cursor li {
   margin: 0px 20px 0px 0px;
   display: inline-block;
 }
-.shane_tm_settings .cursor li a {
+.portfolio_settings .cursor li a {
   text-decoration: none;
   color: #fff;
   opacity: 0.4;
   font-weight: 600;
 }
-.shane_tm_settings .cursor li a.showme {
+.portfolio_settings .cursor li a.showme {
   opacity: 1;
 }
-.shane_tm_settings .cursor li:nth-child(1) a {
+.portfolio_settings .cursor li:nth-child(1) a {
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -2521,7 +2551,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   position: relative;
   display: inline-block;
 }
-.shane_tm_settings .cursor li:nth-child(1) a:before {
+.portfolio_settings .cursor li:nth-child(1) a:before {
   position: absolute;
   content: "";
   width: 4px;
@@ -2532,22 +2562,22 @@ body.dark .shane_tm_settings .cursor li .svg,
   left: 50%;
   top: 50%;
 }
-.shane_tm_settings .cursor li .svg {
+.portfolio_settings .cursor li .svg {
   width: 25px;
   height: 25px;
   color: #fff;
 }
-.shane_tm_settings .cursor li:nth-child(2) {
+.portfolio_settings .cursor li:nth-child(2) {
   position: relative;
   top: -2px;
 }
-.shane_tm_settings .effect {
+.portfolio_settings .effect {
   margin: 0px;
   list-style-type: none;
   padding-top: 15px;
   padding-bottom: 25px;
 }
-.shane_tm_settings .effect li {
+.portfolio_settings .effect li {
   margin: 0px 0px 5px 0px;
   display: inline-block;
   width: 30px;
@@ -2558,7 +2588,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   background-color: #fff;
   opacity: 0.4;
 }
-.shane_tm_settings .effect li a {
+.portfolio_settings .effect li a {
   text-decoration: none;
   color: #000;
   font-size: 13px;
@@ -2568,22 +2598,22 @@ body.dark .shane_tm_settings .cursor li .svg,
   position: relative;
   top: 2px;
 }
-.shane_tm_settings .effect li.selected {
+.portfolio_settings .effect li.selected {
   background-color: #fff;
   opacity: 1;
 }
 
 /*---------------------------------------------------*/
-/*	SHANE INTRO
+/*	PORTFOLIO INTRO
 /*---------------------------------------------------*/
 
-.shane_tm_intro {
+.portfolio_intro {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_intro .hero {
+.portfolio_intro .hero {
   width: 100%;
   height: 100vh;
   float: left;
@@ -2595,7 +2625,7 @@ body.dark .shane_tm_settings .cursor li .svg,
     height: 65vh;
   }
 }
-.shane_tm_intro .hero:before {
+.portfolio_intro .hero:before {
   position: absolute;
   content: "";
   top: 0px;
@@ -2606,7 +2636,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   opacity: 1;
   z-index: 2;
 }
-.shane_tm_intro .hero:after {
+.portfolio_intro .hero:after {
   position: absolute;
   content: "";
   top: 0px;
@@ -2616,7 +2646,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.shane_tm_intro .hero .content {
+.portfolio_intro .hero .content {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -2634,7 +2664,7 @@ body.dark .shane_tm_settings .cursor li .svg,
     margin: 0;
   }
 }
-.shane_tm_intro .hero h3 {
+.portfolio_intro .hero h3 {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -2642,7 +2672,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   padding-top: 10px;
   padding-bottom: 20px;
 }
-.shane_tm_intro .hero p {
+.portfolio_intro .hero p {
   font-family: "Poppins";
   font-weight: 500;
   color: #fff;
@@ -2668,7 +2698,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   background-color: transparent;
   color: #fff;
 }
-.shane_tm_intro .intro_title {
+.portfolio_intro .intro_title {
   width: 100%;
   height: auto;
   clear: both;
@@ -2679,34 +2709,34 @@ body.dark .shane_tm_settings .cursor li .svg,
     padding-bottom: 60px;
   }
 }
-.shane_tm_intro .intro_title h3 {
+.portfolio_intro .intro_title h3 {
   font-weight: 800;
   font-size: 40px;
 }
-.shane_tm_intro .demo_list {
+.portfolio_intro .demo_list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
   margin-bottom: 60px;
 }
-.shane_tm_intro .demo_list .inner {
+.portfolio_intro .demo_list .inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
-.shane_tm_intro .demo_list ul {
+.portfolio_intro .demo_list ul {
   margin: 0px 0px 0px -50px;
   list-style-type: none;
 }
-.shane_tm_intro .demo_list ul li {
+.portfolio_intro .demo_list ul li {
   margin: 0px 0px 20px 0px;
   float: left;
   width: 50%;
   padding-left: 50px;
 }
-.shane_tm_intro .demo_list ul li .list_inner {
+.portfolio_intro .demo_list ul li .list_inner {
   width: 100%;
   height: auto;
   clear: both;
@@ -2716,13 +2746,13 @@ body.dark .shane_tm_settings .cursor li .svg,
   transition: all 0.3s ease;
   top: 0px;
 }
-.shane_tm_intro .demo_list ul li .list_inner img {
+.portfolio_intro .demo_list ul li .list_inner img {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
-.shane_tm_intro .demo_list ul li .list_inner:hover {
+.portfolio_intro .demo_list ul li .list_inner:hover {
   top: -10px;
 }
-.shane_tm_intro .demo_list ul li .list_inner h3 {
+.portfolio_intro .demo_list ul li .list_inner h3 {
   font-size: 20px;
   font-weight: 600;
   padding: 20px 0px;
@@ -2736,7 +2766,7 @@ body.dark .shane_tm_settings .cursor li .svg,
   padding-bottom: 70px;
 }
 
-.shane_tm_feature {
+.portfolio_feature {
   .container {
     &.fluid {
       max-width: 100%;
@@ -2829,122 +2859,122 @@ body.dark .shane_tm_settings .cursor li .svg,
     margin-bottom: 30px;
   }
 
-  .shane_tm_button {
+  .portfolio_button {
     float: none;
   }
 }
 
 /*---------------------------------------------------*/
-/*	16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	16) PORTFOLIO MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 @media (max-width: 1040px) {
-  .shane_tm_topbar {
+  .portfolio_topbar {
     display: none;
   }
-  .shane_tm_mobile_menu {
+  .portfolio_mobile_menu {
     display: block;
   }
-  .shane_tm_portfolio_titles {
+  .portfolio_portfolio_titles {
     display: none;
   }
-  .shane_tm_portfolio .mobile_title {
+  .portfolio_portfolio .mobile_title {
     display: block;
   }
-  .shane_tm_hero .content h3 {
+  .portfolio_hero .content h3 {
     font-size: 35px;
   }
-  .shane_tm_about .about_inner {
+  .portfolio_about .about_inner {
     flex-direction: column;
   }
-  .shane_tm_about .left {
+  .portfolio_about .left {
     padding-right: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-  .shane_tm_about .right {
+  .portfolio_about .right {
     padding-left: 0px;
     width: 100%;
   }
-  .shane_tm_portfolio .portfolio_list ul li {
+  .portfolio_portfolio .portfolio_list ul li {
     width: 50%;
   }
-  .shane_tm_title .title_flex {
+  .portfolio_title .title_flex {
     flex-direction: column;
     align-items: flex-start;
   }
-  .shane_tm_title .portfolio_filter {
+  .portfolio_title .portfolio_filter {
     padding-top: 78px;
   }
-  .shane_tm_portfolio .portfolio_list {
+  .portfolio_portfolio .portfolio_list {
     padding-top: 40px;
   }
-  .shane_tm_skills .skills_inner {
+  .portfolio_skills .skills_inner {
     flex-direction: column;
   }
-  .shane_tm_skills .left {
+  .portfolio_skills .left {
     padding-right: 0px;
     width: 100%;
     margin-bottom: 20px;
   }
-  .shane_tm_skills .right {
+  .portfolio_skills .right {
     padding-left: 0px;
     width: 100%;
   }
-  .shane_tm_testimonials .testimonials_inner {
+  .portfolio_testimonials .testimonials_inner {
     flex-direction: column;
   }
-  .shane_tm_testimonials .left {
+  .portfolio_testimonials .left {
     padding-right: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-  .shane_tm_testimonials .right {
+  .portfolio_testimonials .right {
     padding-left: 0px;
     width: 100%;
   }
-  .shane_tm_news .news_list ul li {
+  .portfolio_news .news_list ul li {
     width: 50%;
   }
-  .shane_tm_talk .text h3 {
+  .portfolio_talk .text h3 {
     font-size: 50px;
     line-height: 1.2;
   }
-  .shane_tm_modalbox_news .description_wrap {
+  .portfolio_modalbox_news .description_wrap {
     padding: 50px 20px;
   }
-  .shane_tm_mobalbox_contact .description_wrap {
+  .portfolio_mobalbox_contact .description_wrap {
     padding: 50px 20px;
   }
-  .shane_tm_mobalbox_contact .wrapper {
+  .portfolio_mobalbox_contact .wrapper {
     flex-direction: column;
   }
-  .shane_tm_mobalbox_contact .left {
+  .portfolio_mobalbox_contact .left {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 50px;
   }
-  .shane_tm_mobalbox_contact .right {
+  .portfolio_mobalbox_contact .right {
     width: 100%;
     padding-left: 0px;
   }
-  .shane_tm_mobalbox_contact .short_info ul {
+  .portfolio_mobalbox_contact .short_info ul {
     margin: 0px;
   }
-  .shane_tm_mobalbox_contact .short_info ul li {
+  .portfolio_mobalbox_contact .short_info ul li {
     width: 100%;
     padding-left: 0px;
   }
-  .shane_tm_hero[data-style="one"] .background {
+  .portfolio_hero[data-style="one"] .background {
     -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
   }
 
-  .shane_tm_hero .image {
+  .portfolio_hero .image {
     background-position: 51% 100%;
   }
 }
 @media (max-width: 767px) {
-  .shane_tm_hero .content {
+  .portfolio_hero .content {
     padding-right: 0px;
     width: 100%;
     z-index: 5;
@@ -2956,7 +2986,7 @@ body.dark .shane_tm_settings .cursor li .svg,
       margin-top: 5px;
     }
   }
-  .shane_tm_hero {
+  .portfolio_hero {
     position: relative;
     &::before {
       content: "";
@@ -2969,32 +2999,32 @@ body.dark .shane_tm_settings .cursor li .svg,
       z-index: 1;
     }
   }
-  .shane_tm_hero .background {
+  .portfolio_hero .background {
     width: 100%;
   }
 
-  .shane_tm_portfolio .portfolio_list ul {
+  .portfolio_portfolio .portfolio_list ul {
     margin: 0px;
   }
-  .shane_tm_portfolio .portfolio_list ul li {
+  .portfolio_portfolio .portfolio_list ul li {
     padding: 0px;
     width: 100%;
     margin-bottom: 20px;
   }
-  .shane_tm_news .news_list ul {
+  .portfolio_news .news_list ul {
     margin: 0px;
   }
-  .shane_tm_news .news_list ul li {
+  .portfolio_news .news_list ul li {
     padding: 0px;
     width: 100%;
   }
-  .shane_tm_portfolio .shane_tm_title {
+  .portfolio_portfolio .portfolio_title {
     margin-bottom: 30px;
   }
-  .shane_tm_intro .demo_list ul {
+  .portfolio_intro .demo_list ul {
     margin: 0px;
   }
-  .shane_tm_intro .demo_list ul li {
+  .portfolio_intro .demo_list ul li {
     width: 100%;
     padding-left: 0px;
   }
@@ -3099,12 +3129,12 @@ body.intro .loader_line:after {
 
 // home version three
 .home-three {
-  .shane_tm_topbar {
+  .portfolio_topbar {
     position: sticky;
     background: #fff;
     border-bottom: 1px solid #efefef;
   }
-  .shane_tm_hero {
+  .portfolio_hero {
     height: calc(100vh - 80px);
     background: #f9f9f9;
     @media screen and (max-width: 1040px) {
@@ -3129,7 +3159,7 @@ body.intro .loader_line:after {
     padding: 8px 25px;
   }
 }
-.shane_tm_topbar .white-fill-bg.btn-outline {
+.portfolio_topbar .white-fill-bg.btn-outline {
   margin-left: 10px;
 }
 .modal-video-close-btn {
@@ -3139,47 +3169,47 @@ body.intro .loader_line:after {
   }
 }
 .home-four {
-  .shane_tm_hero .background {
+  .portfolio_hero .background {
     width: 100% !important;
   }
-  .shane_tm_hero .image {
+  .portfolio_hero .image {
     background-position: 100% 12%;
   }
   @media (max-width: 1040px) {
-    .shane_tm_hero .image {
+    .portfolio_hero .image {
       background-position: 71% 100%;
     }
   }
 
-  .shane_tm_hero[data-style="one"] .background {
+  .portfolio_hero[data-style="one"] .background {
     -webkit-clip-path: none !important;
     clip-path: none !important;
   }
-  .shane_tm_hero .content h3 span {
+  .portfolio_hero .content h3 span {
     -webkit-text-stroke: 1px #fff;
   }
-  .shane_tm_hero .content h3 {
+  .portfolio_hero .content h3 {
     color: #fff;
     position: relative;
     overflow: hidden;
   }
-  .shane_tm_topbar .topbar_inner .logo a img {
+  .portfolio_topbar .topbar_inner .logo a img {
     filter: invert(1);
   }
-  .shane_tm_topbar .menu ul li a {
+  .portfolio_topbar .menu ul li a {
     color: #fff;
   }
-  .shane_tm_topbar .menu ul li.current a {
+  .portfolio_topbar .menu ul li.current a {
     color: #efefef;
   }
-  .shane_tm_topbar .topbar_inner.opened {
+  .portfolio_topbar .topbar_inner.opened {
     background-color: #000;
   }
-  .shane_tm_topbar .topbar_inner {
+  .portfolio_topbar .topbar_inner {
     max-width: 1200px;
     margin: 0 auto;
   }
-  .shane_tm_hero .content .job {
+  .portfolio_hero .content .job {
     font-weight: 700;
     font-size: 35px;
     font-family: "Montserrat";
@@ -3191,31 +3221,31 @@ body.intro .loader_line:after {
       padding: 8px 0 0;
     }
   }
-  .shane_tm_hero .content {
+  .portfolio_hero .content {
     z-index: 3;
   }
 
-  .shane_tm_hero .content h3 {
+  .portfolio_hero .content h3 {
     line-height: 1.3;
   }
   @media screen and (max-width: 767px) {
-    .shane_tm_hero .content h3 {
+    .portfolio_hero .content h3 {
       font-size: 40px;
     }
-    .shane_tm_hero .content .job {
+    .portfolio_hero .content .job {
       font-size: 25px;
       padding-top: 0;
     }
   }
 }
 .home-one {
-  .shane_tm_hero .image {
+  .portfolio_hero .image {
     background-position: center right;
     @media screen and (max-width: 1040px) {
       background-position: 81% 100%;
     }
   }
-  .shane_tm_hero {
+  .portfolio_hero {
     background: rgba(253, 253, 253, 1);
   }
   .white-fill-bg.btn_sm {
@@ -3316,7 +3346,7 @@ body.intro .loader_line:after {
   &.shane_error_page {
     background: transparent;
   }
-  &.shane_tm_intro .hero {
+  &.portfolio_intro .hero {
     &::after {
       display: none;
     }

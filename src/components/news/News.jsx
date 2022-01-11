@@ -21,14 +21,14 @@ const NewsTwo = () => {
   }
 
   return (
-    <div className="shane_tm_section" id="news">
-      <div className="shane_tm_news">
+    <div className="portfolio_section" id="news">
+      <div className="portfolio_news">
         <div className="container">
-          <div className="shane_tm_title">
+          <div className="portfolio_title">
             <span>News</span>
             <h3>Latest News</h3>
           </div>
-          {/* End shane_tm_title */}
+          {/* End portfolio_title */}
           <div className="news_list">
             <ul>
               <Reveal effect="fadeInLeft">
@@ -66,7 +66,7 @@ const NewsTwo = () => {
                       overlayClassName="custom-overlay"
                       closeTimeoutMS={500}
                     >
-                      <div className="shane_tm_modalbox_news">
+                      <div className="portfolio_modalbox_news">
                         <button
                           className="close-modal"
                           onClick={toggleModalOne}
@@ -202,7 +202,7 @@ const NewsTwo = () => {
                       overlayClassName="custom-overlay"
                       closeTimeoutMS={500}
                     >
-                      <div className="shane_tm_modalbox_news">
+                      <div className="portfolio_modalbox_news">
                         <button
                           className="close-modal"
                           onClick={toggleModalTwo}
@@ -338,7 +338,7 @@ const NewsTwo = () => {
                       overlayClassName="custom-overlay"
                       closeTimeoutMS={500}
                     >
-                      <div className="shane_tm_modalbox_news">
+                      <div className="portfolio_modalbox_news">
                         <button
                           className="close-modal"
                           onClick={toggleModalThree}

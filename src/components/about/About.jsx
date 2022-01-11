@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <div className="shane_tm_section" id="about">
-        <div className="shane_tm_about">
+      <div className="portfolio_section" id="about">
+        <div className="portfolio_about">
           <div className="container">
             <div className="about_inner">
               <div className="left">
@@ -29,7 +29,7 @@ const About = () => {
 
               <div className="right">
                 <Reveal effect="fadeInLeft">
-                  <div className="shane_tm_title">
+                  <div className="portfolio_title">
                     <span>About Me</span>
                     <h3>Leonardo Ruhl, Desarrollador Web </h3>
                   </div>
@@ -46,13 +46,13 @@ const About = () => {
                       como profesional.
                     </p>
                   </div>
-                  <section className="shane_tm_about_buttons">
-                    <div className="shane_tm_button">
-                      <a href="img/resume/resume.jpg" download>
+                  <section className="portfolio_about_buttons">
+                    <div className="portfolio_button">
+                      <a href="img/resume/CV_Leonardo_Ruhl.png" download>
                         Descargar CV
                       </a>
                     </div>
-                    <div className="shane_tm_button">
+                    <div className="portfolio_button">
                       <Link to="/about">
                         Más Sobre Mi
                       </Link>

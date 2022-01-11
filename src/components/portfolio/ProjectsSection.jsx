@@ -4,7 +4,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import Reveal from "react-reveal/Reveal";
 import { Link } from "react-router-dom";
 
-const Portfolio = () => {
+export const ProjectsSection = () => {
   return (
     <div className="portfolio_section" id="portfolio">
       {/* <SimpleReactLightbox> */}
@@ -118,5 +118,5 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+
 

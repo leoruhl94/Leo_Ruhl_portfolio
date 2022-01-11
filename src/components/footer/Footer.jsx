@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="shane_tm_section">
-        <div className="shane_tm_copyright">
+      <div className="portfolio_section">
+        <div className="portfolio_copyright">
           <div className="container">
             <div className="inner">
               <p>
