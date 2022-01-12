@@ -1,122 +1,67 @@
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Reveal from "react-reveal/Reveal";
-import { Link } from "react-router-dom";
+import { MdWeb } from "react-icons/md";
+import { SiGithub } from "react-icons/si";
+import { projects } from "../../data";
 
 export const ProjectsSection = () => {
   return (
-    <div className="portfolio_section" id="portfolio">
-      {/* <SimpleReactLightbox> */}
-      <div className="portfolio_portfolio">
-        <div className="container">
-          <div className="positon-relative">
-            <div className="portfolio_title">
-              <div className="title_flex">
-                <div className="left">
-                  <span>Portfolio</span>
-                  <h3>Ultimos Proyectos</h3>
-                </div>
-              </div>
-            </div>
-            {/* End portfolio_title */}
-            <div className="portfolio_filter">
-              <Tabs>
-                <TabList>
-                  <Tab>React</Tab>
-                </TabList>
-                {/* End tablist */}
-                <div className="portfolio_list">
-                  {/* <SRLWrapper> */}
-                  <TabPanel>
-                    <ul className="gallery_zoom">
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="/img/portfolio/the-games-app.tk_.png">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
-
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="/img/portfolio/the-games-app.tk_.png">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
-
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="#">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
-                    </ul>
-                    {/* End portfolio list */}
-                  </TabPanel>
-                  {/* END ALL PORTFOLIO GALLERY */}
-                  {/* </SRLWrapper> */}
-                  {/* End tabpanel */}
-                </div>
-                {/* End list wrapper */}
-              </Tabs>
-            </div>
-          </div>
-          <div className="portfolio_projects_button">
-            <div className="portfolio_button">
-              <Link to="/projects">Ver Todos</Link>
-            </div>
-          </div>
+    <div className="projects__section" id="portfolio_section">
+      <div className="container">
+        <div className="projects__section_title">
+          <h3>Galeria de Proyectos</h3>
+        </div>
+        <div className="projects__section_Projects">
+          <ul>
+            {projects?.map((item) => {
+              return (
+                <ProjectItem
+                key={item.title}
+                  url_img={item.url_img}
+                  title={item.title}
+                  description={item.description}
+                  github={item.github}
+                  deploy={item.deploy}
+                />
+              );
+            })}
+          </ul>
         </div>
       </div>
-      {/* </SimpleReactLightbox> */}
     </div>
   );
 };
 
-
-
+const ProjectItem = ({ url_img, title, description, github, deploy }) => {
+  return (
+    <li className="projectItem">
+      <Reveal effect="fadeIn">
+        <div className="inner">
+          <div className="projectItem_image">
+            <a href="#">
+              <img
+                src={url_img}
+                // src="/img/portfolio/the-games-app.tk_.png"
+                alt="Photography"
+              />
+            </a>
+          </div>
+          <div className="projectItem_description">
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <div className="projectItem_buttons">
+              <a href={github}>
+                <SiGithub />
+                Github
+              </a>
+              <a href={deploy}>
+                <MdWeb />
+                Deploy
+              </a>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+    </li>
+  );
+};

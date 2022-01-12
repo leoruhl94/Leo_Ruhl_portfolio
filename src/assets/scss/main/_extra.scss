@@ -21,27 +21,26 @@
   }
 }
 .about_languages {
-    h3{
-        padding: 20px 0;
+  h3 {
+    padding: 20px 0;
+  }
+  h5 {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    svg {
+      height: 25px;
+      width: 25px;
+      margin-right: 10px;
     }
-    h5{
-        padding-bottom: 10px;
-        display: flex;
-        align-items: center;
-        svg{
-            height: 25px;
-            width: 25px;
-            margin-right: 10px;
-        }
-    }
-    clear: both;
-
+  }
+  clear: both;
 }
 .about_tecnologies {
-    h3{
-        padding: 20px 0;
-    }
-    
+  h3 {
+    padding: 20px 0;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -96,24 +95,112 @@
 .about_subtitle {
   padding: 20px 0;
 }
-.portfolio_button_about{
+.portfolio_button_about {
+  text-align: center;
+  padding-top: 50px;
+}
+#aboutPage_1 .portfolio_about {
+  background-color: #fff;
+  padding-bottom: 25px;
+}
+#aboutPage_2 .portfolio_about {
+  // background-color: #fff;
+  padding-top: 25px;
+}
+#aboutPage_3 .portfolio_about {
+  padding: 50px 0;
+  background-size: cover;
+  .title h3 {
     text-align: center;
-    padding-top: 50px;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
 }
-#aboutPage_1 .portfolio_about{
-    background-color: #fff;
-    padding-bottom: 25px;
+
+// ___________PROJECTS SECTIOn______________________
+
+.projects__section {
+  .projects__section_title h3 {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    margin-top: 80px;
+    font-weight: 800;
+    font-family: "Poppins";
+    line-height: 1.4;
+    font-size: 35px;
+  }
+  .projects__section_Projects {
+    // background-color: blueviolet;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px 0;
+    }
+  }
 }
-#aboutPage_2 .portfolio_about{
-    // background-color: #fff;
-    padding-top: 25px;
-}
-#aboutPage_3 .portfolio_about{
-    padding: 50px 0;
-   background-size: cover;
-   .title h3{
-      text-align: center;
-      font-size: 40px;
-      padding-bottom: 20px;
-   }
+
+.projectItem {
+  width: 33.3%;
+  min-width: 360px;
+  height: 500px;
+  padding: 0 15px;
+  margin-bottom: 30px ;
+  .projectItem_image {
+      min-width: 100%;
+      img{
+          
+          height: 250px;
+        object-fit: cover;
+    }
+  }
+  .projectItem_description {
+    padding: 0 15px;
+    height: 250px;
+    position: relative;
+    border: 1px solid black;
+    h3 {
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    p {
+      max-height: 135px;
+      overflow-y: hidden;
+      line-height: 1.2;
+
+    }
+    .projectItem_buttons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 5px 15px;
+      a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        padding: 8px 24px;
+        border: 2px solid #000;
+        font-family: "Poppins";
+        transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+        svg{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        &:hover{
+            color: #000;
+            background-color: transparent;
+            transform: translateY(-3px);
+        }
+      }
+    }
+  }
 }

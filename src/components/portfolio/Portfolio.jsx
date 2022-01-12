@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Reveal from "react-reveal/Reveal";
 import { Link } from "react-router-dom";
+import { projects } from "../../data";
 
 const Portfolio = () => {
   return (
@@ -30,71 +31,15 @@ const Portfolio = () => {
                   {/* <SRLWrapper> */}
                   <TabPanel>
                     <ul className="gallery_zoom">
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="/img/portfolio/the-games-app.tk_.png">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
-
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="/img/portfolio/the-games-app.tk_.png">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
-
-                      <li>
-                        <Reveal effect="fadeIn">
-                          <div className="inner">
-                            <div className="entry portfolio_portfolio_animation_wrap">
-                              <a href="#">
-                                <img
-                                  src="/img/portfolio/the-games-app.tk_.png"
-                                  alt="Photography"
-                                />
-                              </a>
-                            </div>
-                            <div className="mobile_title">
-                              <h3>The Games App</h3>
-                              <Link to="/projects">
-                                Ver <HiArrowNarrowRight />
-                              </Link>
-                            </div>
-                          </div>
-                        </Reveal>
-                      </li>
-                      {/* End single image block */}
+                      {projects?.map((item) => {
+                        return (
+                          <PortfolioItem
+                            key={item.title + item.url_img}
+                            url_img={item.url_img}
+                            title={item.title}
+                          />
+                        );
+                      })}
                     </ul>
                     {/* End portfolio list */}
                   </TabPanel>
@@ -120,3 +65,24 @@ const Portfolio = () => {
 
 export default Portfolio;
 
+const PortfolioItem = ({ url_img, title }) => {
+  return (
+    <li>
+      <Reveal effect="fadeIn">
+        <div className="inner">
+          <div className="entry portfolio_portfolio_animation_wrap">
+            <a href="#">
+              <img src={url_img} alt="project image" />
+            </a>
+          </div>
+          <div className="mobile_title">
+            <h3>{title}</h3>
+            <Link to="/projects">
+              Ver <HiArrowNarrowRight />
+            </Link>
+          </div>
+        </div>
+      </Reveal>
+    </li>
+  );
+};
