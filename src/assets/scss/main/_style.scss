@@ -1041,11 +1041,10 @@ body.loaded .overlay_effect:after {
   position: relative;
   overflow: hidden;
   &:hover {
-    a {
-      img {
-        transform: scale(1.1);
-      }
+    img {
+      transform: scale(1.1);
     }
+
     .mobile_title {
       transform: translateY(0);
     }
@@ -1054,11 +1053,10 @@ body.loaded .overlay_effect:after {
 .portfolio_portfolio .portfolio_list .image {
   position: relative;
 }
+
 .portfolio_portfolio .portfolio_list .inner img {
   min-width: 100%;
-}
-.portfolio_portfolio .portfolio_list .inner a img {
-  height: 339px;
+  height: 300px;
   object-fit: cover;
   transition: transform 1s cubic-bezier(0, 0, 0.2, 1);
 }
@@ -1157,15 +1155,15 @@ ul.react-tabs__tab-list {
   text-decoration: none;
   display: flex;
   align-items: center;
-  svg{
+  svg {
     height: 20px;
     width: 20px;
     margin-left: 10px;
   }
-  &:hover{
+  &:hover {
     font-size: 17px;
     color: #000;
-    svg{
+    svg {
       height: 22px;
       width: 22px;
       margin-left: 10px;

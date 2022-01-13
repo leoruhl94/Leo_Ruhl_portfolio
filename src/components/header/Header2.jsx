@@ -24,7 +24,7 @@ const Header2 = () => {
         <div className={navbar ? "topbar_inner opened" : "topbar_inner"}>
           <div className="logo">
             <NavLink to="/">
-              <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
+              <img src="/img/logo/logo_leoruhl_1.png" alt="logo" />
             </NavLink>
           </div>
           {/* End logo */}
@@ -54,7 +54,7 @@ const Header2 = () => {
             <div className="topbar_in">
               <div className="logo">
                 <NavLink to="/">
-                  <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
+                  <img src="/img/logo/logo_leoruhl_1.png" alt="logo" />
                 </NavLink>
               </div>
               {/* End logo */}

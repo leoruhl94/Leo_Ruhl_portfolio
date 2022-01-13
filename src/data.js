@@ -15,7 +15,7 @@ export const projects = [
           SPA creada utilizando React, en este proyecto me enfoque en practicar css e 
           incorporando nuevas librerias.`,
       url_img: "/img/portfolio/leoruhl_portfolio.png",
-      github: "https://github.https://github.com/leoruhl94/Leo_Ruhl_portfolio/leoruhl94/PI-Videogames-main",
+      github: "https://github.com/leoruhl94/Leo_Ruhl_portfolio",
       deploy: "https://leoruhl.com.ar/",
     },
   ];
