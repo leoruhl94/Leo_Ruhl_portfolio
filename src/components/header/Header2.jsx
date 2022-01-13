@@ -24,24 +24,12 @@ const Header2 = () => {
         <div className={navbar ? "topbar_inner opened" : "topbar_inner"}>
           <div className="logo">
             <NavLink to="/">
-              <img src="/img/logo/logo_02.png" alt="partners brand" />
+              <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
             </NavLink>
           </div>
           {/* End logo */}
           <div className="menu">
-            {/* <div
-              className="anchor_nav"
-            //   items={["home", "about", "portfolio", "news", "contact"]}
-            //   currentClassName="current"
-            //   offset={-200}
-             > */}
-
-            <ul
-            //   className="anchor_nav"
-            //   items={["home", "about", "portfolio", "news", "contact"]}
-            //   currentClassName="current"
-            //   offset={-200}
-            >
+           <ul >
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -66,7 +54,7 @@ const Header2 = () => {
             <div className="topbar_in">
               <div className="logo">
                 <NavLink to="/">
-                  <img src="/img/logo/logo_02.png" alt="partners brand" />
+                  <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
                 </NavLink>
               </div>
               {/* End logo */}
@@ -95,26 +83,19 @@ const Header2 = () => {
             <div className="dropdown_inner">
               <ul className="anchor_nav">
                 <li className="current">
-                  <a href="#home" onClick={handleClick}>
+                  <NavLink to="/" onClick={handleClick}>
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="#about" onClick={handleClick}>
+                  <NavLink to="/about" onClick={handleClick}>
                     About
                   </NavLink>
-                  {/* <a href="/#about" onClick={handleClick}>
-                  </a> */}
                 </li>
                 <li>
-                  <a href="#portfolio" onClick={handleClick}>
+                  <NavLink to="/projects" onClick={handleClick}>
                     Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" onClick={handleClick}>
-                    Contact
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <div className="social-menu">

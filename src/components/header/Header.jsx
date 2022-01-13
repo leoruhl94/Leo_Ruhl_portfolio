@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Scrollspy from "react-scrollspy";
-// import Social from "../SocialTwo";
+import Social from "../SocialTwo";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
         <div className={navbar ? "topbar_inner opened" : "topbar_inner"}>
           <div className="logo">
             <NavLink to="/">
-              <img src="/img/logo/logo_02.png" alt="partners brand" />
+              <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
             </NavLink>
           </div>
           {/* End logo */}
@@ -62,7 +62,7 @@ const Header = () => {
             <div className="topbar_in">
               <div className="logo">
                 <NavLink to="/">
-                   <img src="/img/logo/logo_02.png" alt="partners brand" />
+                   <img src="/img/logo/logo_leoruhl_1.png" alt="partners brand" />
                 </NavLink>
               </div>
               {/* End logo */}
@@ -96,9 +96,9 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <NavLink to="#about" onClick={handleClick}>
+                  <a to="#about" onClick={handleClick}>
                     About
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
                   <a href="#portfolio" onClick={handleClick}>
@@ -112,7 +112,7 @@ const Header = () => {
                 </li>
               </ul>
               <div className="social-menu">
-                {/* <Social /> */}
+                <Social />
               </div>
               {/* End social share */}
             </div>

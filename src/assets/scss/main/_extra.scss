@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   img {
-    width: 50%;
+    width: 75%;
     border-radius: 100%;
     margin: 0 auto;
   }
@@ -18,6 +19,40 @@
     padding-top: 0.5rem;
     font-weight: 700;
     font-family: "Poppins";
+  }
+  @media screen and (max-width: 546px) {
+    img {
+      width: 90%;
+    }
+    h2 {
+      padding-top: 1.5rem;
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+}
+.portfolio_section .portfolio_about .container .about_inner {
+  @media screen and (max-width: 546px) {
+    .left {
+      margin-bottom: 10px;
+    }
+    .right {
+      margin-bottom: 10px;
+    }
+  }
+}
+#aboutPage_1{
+    margin-top: 40px;
+    @media screen and (max-width: 1040px) {
+        margin-top: 0;
+
+    }
+}
+#aboutPage_2 .portfolio_about .container .about_inner {
+  @media screen and (max-width: 546px) {
+    flex-direction: column-reverse;
   }
 }
 .about_languages {
@@ -129,35 +164,50 @@
     font-family: "Poppins";
     line-height: 1.4;
     font-size: 35px;
-  }
-  .projects__section_Projects {
+    @media screen and (max-width: 786px) {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+}
+.projects__section_Projects {
     // background-color: blueviolet;
     ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 50px 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        @media screen and (max-width: 546px) {
+            padding: 20px 0;
+        }
     }
   }
 }
 
 .projectItem {
+  @media screen and (max-width: 546px) {
+    width: 100%;
+    padding: 0 5px;
+  }
+  @media screen and (max-width: 1040px) {
+    width: 50%;
+    padding: 0 10px;
+  }
   width: 33.3%;
-  min-width: 360px;
-  height: 500px;
+  min-width: 340px;
+  max-width: 370px;
+  height: 520px;
   padding: 0 15px;
-  margin-bottom: 30px ;
+  margin-bottom: 30px;
   .projectItem_image {
-      min-width: 100%;
-      img{
-          
-          height: 250px;
-        object-fit: cover;
+    min-width: 100%;
+    img {
+      height: 250px;
+      object-fit: cover;
     }
   }
   .projectItem_description {
     padding: 0 15px;
-    height: 250px;
+    height: 270px;
     position: relative;
     border: 1px solid black;
     h3 {
@@ -166,10 +216,9 @@
       font-weight: 600;
     }
     p {
-      max-height: 135px;
+      max-height: 155px;
       overflow-y: hidden;
       line-height: 1.2;
-
     }
     .projectItem_buttons {
       position: absolute;
@@ -180,7 +229,7 @@
       justify-content: space-between;
       width: 100%;
       padding: 5px 15px;
-      a{
+      a {
         text-decoration: none;
         color: #fff;
         background-color: #000;
@@ -190,17 +239,23 @@
         border: 2px solid #000;
         font-family: "Poppins";
         transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
-        svg{
-            width: 25px;
-            height: 25px;
-            margin-right: 10px;
+        svg {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
         }
-        &:hover{
-            color: #000;
-            background-color: transparent;
-            transform: translateY(-3px);
+        &:hover {
+          color: #000;
+          background-color: transparent;
+          transform: translateY(-3px);
         }
       }
     }
   }
 }
+//____________
+
+.logo a img{
+    max-height: 100px;
+}
+

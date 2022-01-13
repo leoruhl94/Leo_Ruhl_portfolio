@@ -5,7 +5,7 @@ export const projects = [
           Consiste en crear una SPA aplicando las tecnologias aprendidas en el bootcamp 
           consumiendo la api de videojuegos rawg.io, usando React, Redux, Node, Express,
           Sequelize y PostgreSQL entre otras tecnologias.`,
-      url_img: "/img/portfolio/the-games-app.tk_.png",
+      url_img: "/img/portfolio/the-games-app.png",
       github: "https://github.com/leoruhl94/PI-Videogames-main",
       deploy: "http://the-games-app.tk/#/",
     },
@@ -14,8 +14,8 @@ export const projects = [
       description: `Portfolio personal simple.
           SPA creada utilizando React, en este proyecto me enfoque en practicar css e 
           incorporando nuevas librerias.`,
-      url_img: "/img/portfolio/the-games-app.tk_.png",
-      github: "https://github.com/leoruhl94/PI-Videogames-main",
-      deploy: "http://the-games-app.tk/#/",
+      url_img: "/img/portfolio/leoruhl_portfolio.png",
+      github: "https://github.https://github.com/leoruhl94/Leo_Ruhl_portfolio/leoruhl94/PI-Videogames-main",
+      deploy: "https://leoruhl.com.ar/",
     },
   ];

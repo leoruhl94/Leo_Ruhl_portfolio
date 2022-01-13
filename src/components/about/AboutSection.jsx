@@ -1,7 +1,8 @@
 import React from "react";
 import Reveal from "react-reveal/Reveal";
-import { Link } from "react-router-dom";
-import profile_img from "../../assets/images/Profile_img_leo.jpg";
+// import profile_img from "../../assets/images/Profile_img_leo.jpg";
+// import profile_img from "../../assets/images/leoruhl_profile.jpg";
+import profile_img from "../../assets/images/leoruhl_profile_2.png";
 import { HiChevronRight } from "react-icons/hi";
 import {
   SiRedux,
