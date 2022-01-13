@@ -56,7 +56,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      {/* </SimpleReactLightbox> */}
     </div>
   );
 };
@@ -64,24 +63,23 @@ const Portfolio = () => {
 export default Portfolio;
 
 const PortfolioItem = ({ url_img, title }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <li>
       <Reveal effect="fadeIn">
         <div className="inner">
-          {/* <div className="entry portfolio_portfolio_animation_wrap">
-            <a href="#">
-              <img src={url_img} alt="project image" />
-            </a>
-          </div> */}
-          <div className="entry portfolio_portfolio_animation_wrap" onClick={() => setIsOpen( true )}>
-               <img
-                 src={url_img}
-                 alt="project image"
-               />
-         
+          <div
+            className="entry portfolio_portfolio_animation_wrap"
+            onClick={() => setIsOpen(true)}
+          >
+            <img src={url_img} alt="project image" />
           </div>
-            {isOpen && <Lightbox mainSrc={url_img} onCloseRequest={() => setIsOpen(false )}/>}
+          {isOpen && (
+            <Lightbox
+              mainSrc={url_img}
+              onCloseRequest={() => setIsOpen(false)}
+            />
+          )}
           <div className="mobile_title">
             <h3>{title}</h3>
             <Link to="/projects">
