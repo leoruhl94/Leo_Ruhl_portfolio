@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const Contact = () => {
   const {
@@ -8,9 +9,14 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
+    try{
+      await axios.post("https://api-portfolio-leoruhl.herokuapp.com/mail",data)
+      console.log("Message submited");
+    }catch(error){
+      console.log("Error to submit")
+    }
     e.target.reset();
-    console("Message submited: " + JSON.stringify(data));
   };
 
   return (
@@ -33,7 +39,7 @@ const Contact = () => {
             <li>
               <input
                 {...register(
-                  "email",
+                  "mail",
                   {
                     required: "Email is Required",
                     pattern: {
@@ -52,7 +58,7 @@ const Contact = () => {
 
             <li>
               <textarea
-                {...register("subject", { required: true })}
+                {...register("message", { required: true })}
                 placeholder="Message"
               ></textarea>
               {errors.subject && <span>Subject is required.</span>}
