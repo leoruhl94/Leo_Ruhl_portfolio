@@ -2,6 +2,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./assets/scss/style.scss";
+import axios from "axios";
+
+setInterval(() => {
+  axios.get("https://api-portfolio-leoruhl.herokuapp.com/server-up")
+    .then(data => console.log(data.data))
+},1000000)
 
 ReactDOM.render(
   <App />,
