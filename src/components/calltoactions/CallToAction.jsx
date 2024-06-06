@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Contact from "../Contact/Contact";
-import Reveal from "react-reveal/Reveal";
 import { Contactlinks } from "../Contact/ContactLinks";
+import { Fade } from "react-awesome-reveal";
 
 Modal.setAppElement("#root");
 
@@ -35,18 +35,18 @@ const CallToActionTwo = () => {
         {/* End background */}
 
         <div className="talk_inner">
-          <Reveal effect="fadeInUp">
+          <Fade direction="up" triggerOnce>
             <div className="text">
               <h3>Trabajemos Juntos!</h3>
             </div>
-          </Reveal>
-          <Reveal effect="fadeInUp">
+          </Fade>
+          <Fade direction="up" triggerOnce>
             <div className="button">
               <button className="white-fill-bg" onClick={toggleModalOne}>
                 Contactame!
               </button>
             </div>
-          </Reveal>
+          </Fade>
         </div>
         {/* End talk_inner */}
       </div>

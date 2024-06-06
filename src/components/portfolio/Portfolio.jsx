@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import Reveal from "react-reveal/Reveal";
 import { Link } from "react-router-dom";
 import { projects } from "../../data";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import { Fade } from "react-awesome-reveal";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
 
 const Portfolio = () => {
   return (
@@ -66,7 +66,7 @@ const PortfolioItem = ({ url_img, title }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <li>
-      <Reveal effect="fadeIn">
+      <Fade triggerOnce>
         <div className="inner">
           <div
             className="entry portfolio_portfolio_animation_wrap"
@@ -74,12 +74,14 @@ const PortfolioItem = ({ url_img, title }) => {
           >
             <img src={url_img} alt="project image" />
           </div>
-          {isOpen && (
-            <Lightbox
-              mainSrc={url_img}
-              onCloseRequest={() => setIsOpen(false)}
-            />
-          )}
+
+          {/* {isOpen && (
+          // TODO: Fix <Lightbox>
+          // <Lightbox
+          //   mainSrc={url_img}
+          //   onCloseRequest={() => setIsOpen(false)}
+          // />
+        )} */}
           <div className="mobile_title">
             <h3>{title}</h3>
             <Link to="/projects">
@@ -87,7 +89,7 @@ const PortfolioItem = ({ url_img, title }) => {
             </Link>
           </div>
         </div>
-      </Reveal>
+      </Fade>
     </li>
   );
 };

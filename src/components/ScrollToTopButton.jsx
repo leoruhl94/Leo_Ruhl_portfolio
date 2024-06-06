@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Reveal from "react-reveal/Reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,11 +31,11 @@ export default function ScrollToTopButton() {
   return (
     <>
       {isVisible && (
-        <Reveal effect="fadeInUp">
+        <Fade direction="up" triggerOnce>
           <div onClick={scrollToTop} className="scroll_up">
             <img src="/img/arrow-up.svg" alt="scroll up" />
           </div>
-       </Reveal>
+        </Fade>
       )}
     </>
   );

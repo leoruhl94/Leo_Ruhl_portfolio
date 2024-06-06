@@ -1,5 +1,4 @@
 import React from "react";
-import Reveal from "react-reveal/Reveal";
 import profile_img from "../../assets/images/leoruhl_profile_2.png";
 import { HiChevronRight } from "react-icons/hi";
 import {
@@ -13,6 +12,7 @@ import {
   SiGithub,
   SiJavascript,
 } from "react-icons/si";
+import { Fade } from "react-awesome-reveal";
 
 export const AboutSection = () => {
   return (
@@ -22,7 +22,7 @@ export const AboutSection = () => {
           <div className="container">
             <div className="about_inner">
               <div className="left">
-                <Reveal effect="fadeInLeft">
+                <Fade direction="left" triggerOnce>
                   {/* _____________ */}
 
                   <div className="about__profile">
@@ -50,12 +50,12 @@ export const AboutSection = () => {
                       como profesional.
                     </p>
                   </div>
-                </Reveal>
+                </Fade>
                 {/* End image */}
               </div>
               {/* End left */}
               <div className="right">
-                <Reveal effect="fadeInLeft">
+                <Fade direction="left" triggerOnce>
                   {/* __________________Experiencia________ */}
                   <h3 className="about_subtitle">Experiencia</h3>
 
@@ -118,7 +118,7 @@ export const AboutSection = () => {
                       </p>
                     </div>
                   </div>
-                </Reveal>
+                </Fade>
               </div>
               {/* End right */}
             </div>
@@ -132,7 +132,7 @@ export const AboutSection = () => {
           <div className="container">
             <div className="about_inner">
               <div className="left">
-                <Reveal effect="fadeInLeft">
+                <Fade direction="left" triggerOnce>
                   <div className="about_languages">
                     <h3>Idiomas</h3>
                     <h5>
@@ -183,16 +183,13 @@ export const AboutSection = () => {
                       </li>
                     </ul>
                   </div>
-
-                  {/* __________________________________ */}
-
                   {/* _____________ */}
-                </Reveal>
+                </Fade>
                 {/* End image */}
               </div>
               {/* End left */}
               <div className="right">
-                <Reveal effect="fadeInLeft">
+                <Fade direction="left" triggerOnce>
                   {/* ___________________Formacion____________ */}
                   <h3 className="about_subtitle">Formacion</h3>
 
@@ -238,9 +235,8 @@ export const AboutSection = () => {
                       </p>
                     </div>
                   </div>
-
                   {/* _____________ */}
-                </Reveal>
+                </Fade>
               </div>
               {/* End right */}
             </div>

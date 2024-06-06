@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "react-reveal/Reveal";
+import { Fade } from "react-awesome-reveal";
 
 const SkillsTwo = () => {
   return (
@@ -8,21 +8,18 @@ const SkillsTwo = () => {
         <div className="portfolio_skills">
           <div className="container">
             <div className="skills_inner">
-              <Reveal effect="fadeInLeft">
+              <Fade direction="left" triggerOnce>
                 <div className="left">
                   <div className="portfolio_title">
-                    <h3>Skills  </h3>
+                    <h3>Skills </h3>
                   </div>
                   <div className="text">
-                    <p>
-                      no se que carajo escribir aca
-                    </p>
+                    <p>no se que carajo escribir aca</p>
                   </div>
                 </div>
                 {/* End .left */}
-              </Reveal>
-
-              <Reveal effect="fadeInLeft">
+              </Fade>
+              <Fade direction="left" triggerOnce>
                 <div className="right">
                   <div className="tokyo_progress">
                     <div className="progress_inner">
@@ -75,7 +72,7 @@ const SkillsTwo = () => {
                   </div>
                 </div>
                 {/* End .right */}
-              </Reveal>
+              </Fade>
             </div>
           </div>
           {/* End .conainer */}

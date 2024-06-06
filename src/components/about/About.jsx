@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "react-reveal/Reveal";
+import Fade from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
           <div className="container">
             <div className="about_inner">
               <div className="left">
-                <Reveal effect="fadeInLeft">
+                <Fade direction="left" triggerOnce fraction={1}>
                   <div className="image">
                     <img src="/img/placeholders/1-1.jpg" alt="placeholder" />
                     <div
@@ -22,13 +22,19 @@ const About = () => {
                       }}
                     ></div>
                   </div>
-                </Reveal>
+                </Fade>
                 {/* End image */}
               </div>
               {/* End left */}
 
               <div className="right">
-                <Reveal effect="fadeInLeft">
+                <Fade
+                  cascade
+                  fraction={1}
+                  damping={0.2}
+                  direction="left"
+                  triggerOnce
+                >
                   <div className="portfolio_title">
                     <span>About Me</span>
                     <h3>Leonardo Ruhl, Desarrollador Web </h3>
@@ -53,13 +59,10 @@ const About = () => {
                       </a>
                     </div>
                     <div className="portfolio_button">
-                      <Link to="/about">
-                        Más Sobre Mi
-                      </Link>
-                     
+                      <Link to="/about">Más Sobre Mi</Link>
                     </div>
                   </section>
-                </Reveal>
+                </Fade>
               </div>
               {/* End right */}
             </div>
