@@ -12,7 +12,7 @@ const About = () => {
               <div className="left">
                 <Fade direction="left" triggerOnce fraction={1}>
                   <div className="image">
-                    <img src="/img/placeholders/1-1.jpg" alt="placeholder" />
+                    <img src="/img/about/workspace_1.jpg" alt="placeholder" />
                     <div
                       className="main"
                       style={{

@@ -3,8 +3,8 @@ import { MdWeb } from "react-icons/md";
 import { SiGithub } from "react-icons/si";
 import { projects } from "../../data";
 import { Fade } from "react-awesome-reveal";
-// import Lightbox from "react-image-lightbox";
-// import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export const ProjectsSection = () => {
   return (
@@ -41,10 +41,13 @@ const ProjectItem = ({ url_img, title, description, github, deploy }) => {
       <Fade triggerOnce>
         <div className="inner">
           <div className="projectItem_image" onClick={() => setIsOpen(true)}>
-            <img src={url_img} alt="project image" />
+            <img src={url_img} alt="project" />
           </div>
-          {/* TODO: fix Lightbox */}
-          {/* {isOpen && <Lightbox mainSrc={url_img} onCloseRequest={() => setIsOpen(false )}/>} */}
+          <Lightbox
+            open={isOpen}
+            slides={[{ src: url_img }]}
+            close={() => setIsOpen(false)}
+          />
           <div className="projectItem_description">
             <h3>{title}</h3>
             <p>{description}</p>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +15,7 @@ export default function ScrollToTopButton() {
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.pageYOffset > 500) {
+      if (window.scrollY > 500) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -29,14 +28,11 @@ export default function ScrollToTopButton() {
   }, []);
 
   return (
-    <>
-      {isVisible && (
-        <Fade direction="up" triggerOnce>
-          <div onClick={scrollToTop} className="scroll_up">
-            <img src="/img/arrow-up.svg" alt="scroll up" />
-          </div>
-        </Fade>
-      )}
-    </>
+    <div
+      onClick={scrollToTop}
+      className={`scroll_up ${isVisible ? "visible" : "hidden"}`}
+    >
+      <img src="/img/arrow-up.svg" alt="scroll up" />
+    </div>
   );
 }

@@ -4,8 +4,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { projects } from "../../data";
 import { Fade } from "react-awesome-reveal";
-// import Lightbox from "react-image-lightbox";
-// import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const Portfolio = () => {
   return (
@@ -72,16 +72,13 @@ const PortfolioItem = ({ url_img, title }) => {
             className="entry portfolio_portfolio_animation_wrap"
             onClick={() => setIsOpen(true)}
           >
-            <img src={url_img} alt="project image" />
+            <img src={url_img} alt="project" />
           </div>
-
-          {/* {isOpen && (
-          // TODO: Fix <Lightbox>
-          // <Lightbox
-          //   mainSrc={url_img}
-          //   onCloseRequest={() => setIsOpen(false)}
-          // />
-        )} */}
+          <Lightbox
+            open={isOpen}
+            slides={[{ src: url_img }]}
+            close={() => setIsOpen(false)}
+          />
           <div className="mobile_title">
             <h3>{title}</h3>
             <Link to="/projects">
