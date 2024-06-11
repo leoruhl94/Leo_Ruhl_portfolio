@@ -10,11 +10,14 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data, e) => {
-    try{
-      await axios.post("https://api-portfolio-leoruhl.herokuapp.com/mail",data)
+    try {
+      await axios.post(
+        "https://api-portfolio-leoruhl.herokuapp.com/mail",
+        data
+      );
       console.log("Message submited");
-    }catch(error){
-      console.log("Error to submit")
+    } catch (error) {
+      console.log("Error to submit");
     }
     e.target.reset();
   };
@@ -28,10 +31,10 @@ const Contact = () => {
               <input
                 {...register("name", { required: true })}
                 type="text"
-                placeholder="Name"
+                placeholder="Nombre"
               />
               {errors.name && errors.name.type === "required" && (
-                <span>Name is required</span>
+                <span>Nombre es requerido</span>
               )}
             </li>
             {/* End first name field */}
@@ -41,10 +44,11 @@ const Contact = () => {
                 {...register(
                   "mail",
                   {
-                    required: "Email is Required",
+                    required: "Email es Requerido",
                     pattern: {
                       value: /\S+@\S+\.\S+/,
-                      message: "Entered value does not match email format",
+                      message:
+                        "El valor ingresado no coincide con un formato de email valido",
                     },
                   },
                   { required: true }
@@ -59,9 +63,9 @@ const Contact = () => {
             <li>
               <textarea
                 {...register("message", { required: true })}
-                placeholder="Message"
+                placeholder="Mensaje"
               ></textarea>
-              {errors.subject && <span>Subject is required.</span>}
+              {errors.subject && <span>Este campo es requerido.</span>}
             </li>
             {/* End subject  field */}
           </ul>
@@ -69,7 +73,7 @@ const Contact = () => {
 
         <div className="tokyo_tm_button">
           <button type="submit" className="white-fill-bg fill-black">
-            Send Message
+            Enviar Mensaje
           </button>
         </div>
         {/* End tokyo_tm_button */}

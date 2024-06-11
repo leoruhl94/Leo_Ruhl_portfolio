@@ -36,25 +36,40 @@ const About = () => {
                   triggerOnce
                 >
                   <div className="portfolio_title">
-                    <span>About Me</span>
+                    <span>Sobre Mi</span>
                     <h3>Leonardo Ruhl, Desarrollador Web </h3>
                   </div>
                   <div className="text">
                     <p>
-                      Me apasiona programar, enseñar y encarar nuevos desafíos
-                      que continuamente me permitan aprender algo nuevo. Siempre
-                      me gusto crear cosas, programando tengo la oportunidad de
-                      crear soluciones que puedan ayudar a mejorar el mundo con
-                      solo unas líneas de código. <br />
-                      Actualmente estoy en búsqueda de nuevos desafíos donde
-                      pueda aportar mi experiencia y conocimientos. Busco un
-                      puesto que me permita seguir aprendiendo y desarrollandome
-                      como profesional.
+                      ¡Hola! Soy Leo, un apasionado Full Stack Developer con
+                      experiencia tanto en el desarrollo Frontend como en el
+                      Backend. Me encanta crear soluciones innovadoras que
+                      impacten positivamente en el mundo a través de la
+                      programación. <br />
+                      Mi experiencia incluye la implementación de interfaces de
+                      usuario con React.js y TypeScript, el desarrollo de
+                      backends con Golang, Node.js y Express, y la integración
+                      de servicios de terceros, trabajando en entornos
+                      colaborativos.
+                      <br />
+                      Actualmente, estoy enfocando mis esfuerzos en
+                      especializarme en desarrollo Frontend, explorando nuevas
+                      tecnologías y metodologías para mejorar mis habilidades y
+                      ofrecer soluciones aún más creativas y efectivas.
+                      <br />
+                      Fuera del trabajo, soy un apasionado por el aprendizaje
+                      autodidacta y siempre estoy buscando oportunidades para
+                      crecer profesionalmente. Si estás buscando un
+                      desarrollador comprometido y creativo, ¡me encantaría
+                      conectarme contigo!
                     </p>
                   </div>
                   <section className="portfolio_about_buttons">
                     <div className="portfolio_button">
-                      <a href="img/resume/CV_Leonardo_Ruhl.png" download>
+                      <a
+                        href="img/resume/CV_Leonardo_Ruhl_06-2024.pdf"
+                        download
+                      >
                         Descargar CV
                       </a>
                     </div>

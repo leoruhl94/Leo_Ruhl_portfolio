@@ -7,12 +7,17 @@ import {
   SiSequelize,
   SiReact,
   SiNodedotjs,
-  SiWebpack,
   SiExpress,
   SiGithub,
   SiJavascript,
+  SiNextdotjs,
+  SiTypescript,
+  SiPrisma,
+  SiGo,
 } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
+import { ExperienceItem } from "./ExperienceItem";
+import { experienceData } from "../../data";
 
 export const AboutSection = () => {
   return (
@@ -39,15 +44,27 @@ export const AboutSection = () => {
                   </div>
                   <div className="text">
                     <p>
-                      Me apasiona programar, enseñar y encarar nuevos desafíos
-                      que continuamente me permitan aprender algo nuevo. Siempre
-                      me gusto crear cosas, programando tengo la oportunidad de
-                      crear soluciones que puedan ayudar a mejorar el mundo con
-                      solo unas líneas de código. <br />
-                      Actualmente estoy en búsqueda de nuevos desafíos donde
-                      pueda aportar mi experiencia y conocimientos. Busco un
-                      puesto que me permita seguir aprendiendo y desarrollandome
-                      como profesional.
+                      ¡Hola! Soy Leo, un apasionado Full Stack Developer con
+                      experiencia tanto en el desarrollo Frontend como en el
+                      Backend. Me encanta crear soluciones innovadoras que
+                      impacten positivamente en el mundo a través de la
+                      programación. <br />
+                      Mi experiencia incluye la implementación de interfaces de
+                      usuario con React.js y TypeScript, el desarrollo de
+                      backends con Golang, Node.js y Express, y la integración
+                      de servicios de terceros, trabajando en entornos
+                      colaborativos.
+                      <br />
+                      Actualmente, estoy enfocando mis esfuerzos en
+                      especializarme en desarrollo Frontend, explorando nuevas
+                      tecnologías y metodologías para mejorar mis habilidades y
+                      ofrecer soluciones aún más creativas y efectivas.
+                      <br />
+                      Fuera del trabajo, soy un apasionado por el aprendizaje
+                      autodidacta y siempre estoy buscando oportunidades para
+                      crecer profesionalmente. Si estás buscando un
+                      desarrollador comprometido y creativo, ¡me encantaría
+                      conectarme contigo!
                     </p>
                   </div>
                 </Fade>
@@ -58,66 +75,18 @@ export const AboutSection = () => {
                 <Fade direction="left" triggerOnce>
                   {/* __________________Experiencia________ */}
                   <h3 className="about_subtitle">Experiencia</h3>
-
-                  <div className="portfolio_about_experience">
-                    <div className="experience_left">
-                      <h6>2015-2021</h6>
-
-                      <div className="separator">
-                        <span></span>
-                        <HiChevronRight />
-                      </div>
-
-                      <p>AUTONOMO</p>
-                    </div>
-
-                    <div className="experience_right">
-                      <h4>Tecnico Instalador Electricista</h4>
-                      <p>
-                        Coordinacion y organizacion de equipos para cumplir con
-                        los objetivos en los tiempos establecidos.
-                      </p>
-                    </div>
-                  </div>
-
+                  {experienceData.map((data, i) => (
+                    <ExperienceItem
+                      key={i}
+                      title={data.title}
+                      extract={data.extract}
+                      content={data.content}
+                      link={data.link}
+                      timePeriod={data.timePeriod}
+                      employer={data.employer}
+                    />
+                  ))}
                   {/* _____________ */}
-
-                  <div className="portfolio_about_experience">
-                    <div className="experience_left">
-                      <h6>2021</h6>
-
-                      <div className="separator">
-                        <span></span>
-                        <HiChevronRight />
-                      </div>
-
-                      <p>SOY HENRY</p>
-                    </div>
-
-                    <div className="experience_right">
-                      <h4>Full Stack Teaching Assistant</h4>
-                      <p>
-                        Ayudante de bootcamp (TA) para alumnos de Desarrollo
-                        Full-Stack.
-                      </p>
-                      <p>
-                        Coordinar a un grupo de estudiantes para lograr la
-                        integración al grupo de estudio.
-                      </p>
-                      <p>
-                        Orientar a los estudiantes en los primeros pasos de la
-                        cursada
-                      </p>
-                      <p>
-                        Asistir la resolución de ejercicios y promover la
-                        colaboración grupal (Pair Programming)
-                      </p>
-                      <p>
-                        Proponer ideas para la mejora de los procesos del
-                        Bootcamp
-                      </p>
-                    </div>
-                  </div>
                 </Fade>
               </div>
               {/* End right */}
@@ -158,6 +127,18 @@ export const AboutSection = () => {
                         <span>Redux</span>
                       </li>
                       <li>
+                        <SiNextdotjs />
+                        <span>Next js</span>
+                      </li>
+                      <li>
+                        <SiTypescript />
+                        <span>Typescript</span>
+                      </li>
+                      <li>
+                        <SiPrisma />
+                        <span>Prisma</span>
+                      </li>
+                      <li>
                         <SiNodedotjs />
                         <span>Nodejs</span>
                       </li>
@@ -170,8 +151,8 @@ export const AboutSection = () => {
                         <span>Sequelize</span>
                       </li>
                       <li>
-                        <SiWebpack />
-                        <span>Webpack</span>
+                        <SiGo />
+                        <span>Golang</span>
                       </li>
                       <li>
                         <SiPostgresql />
@@ -195,28 +176,6 @@ export const AboutSection = () => {
 
                   <div className="portfolio_about_experience">
                     <div className="experience_left">
-                      <h6>2017-2019</h6>
-
-                      <div className="separator">
-                        <span></span>
-                        <HiChevronRight />
-                      </div>
-
-                      <p>UTN - FRC</p>
-                    </div>
-
-                    <div className="experience_right">
-                      <h4>Ingeniería Electrónica</h4>
-                      <p>
-                        Primeros dos años de la carrera Ingenieria Electronica
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* _____________ */}
-
-                  <div className="portfolio_about_experience">
-                    <div className="experience_left">
                       <h6>2021</h6>
 
                       <div className="separator">
@@ -236,12 +195,33 @@ export const AboutSection = () => {
                     </div>
                   </div>
                   {/* _____________ */}
+                  <div className="portfolio_about_experience">
+                    <div className="experience_left">
+                      <h6>2017-2019</h6>
+
+                      <div className="separator">
+                        <span></span>
+                        <HiChevronRight />
+                      </div>
+
+                      <p>UTN - FRC</p>
+                    </div>
+
+                    <div className="experience_right">
+                      <h4>Ingeniería Electrónica</h4>
+                      <p>
+                        Primeros dos años de la carrera Ingenieria Electronica
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* _____________ */}
                 </Fade>
               </div>
               {/* End right */}
             </div>
             <div className="portfolio_button portfolio_button_about">
-              <a href="img/resume/CV_Leonardo_Ruhl.png" download>
+              <a href="img/resume/CV_Leonardo_Ruhl_06-2024.pdf" download>
                 Descargar CV
               </a>
             </div>
