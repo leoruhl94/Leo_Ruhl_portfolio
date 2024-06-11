@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   img {
     width: 75%;
     border-radius: 100%;
@@ -43,12 +43,11 @@
     }
   }
 }
-#aboutPage_1{
-    margin-top: 40px;
-    @media screen and (max-width: 1040px) {
-        margin-top: 0;
-
-    }
+#aboutPage_1 {
+  margin-top: 40px;
+  @media screen and (max-width: 1040px) {
+    margin-top: 0;
+  }
 }
 #aboutPage_2 .portfolio_about .container .about_inner {
   @media screen and (max-width: 546px) {
@@ -95,6 +94,37 @@
     }
   }
 }
+.experience_modal {
+  padding: 2.5rem;
+  max-height: 80vh;
+  overflow-y: scroll;
+  @media (max-width: 599px) {
+    padding: 1rem;
+  }
+  .experience_modal_content {
+    @media (max-width: 1600px) {
+      width: 1070px;
+    }
+    @media (max-width: 1400px) {
+      width: 900px;
+    }
+    @media (max-width: 992px) {
+      width: 700px;
+    }
+    @media (max-width: 768px) {
+      width: 560px;
+    }
+    @media (max-width: 599px) {
+      width: 460px;
+    }
+    @media (max-width: 490px) {
+      width: 360px;
+    }
+    @media (max-width: 420px) {
+      width: 320px;
+    }
+  }
+}
 .portfolio_about_experience {
   width: 100%;
   display: flex;
@@ -103,6 +133,15 @@
   .experience_left {
     width: 25%;
     h6 {
+    }
+    a {
+      color: inherit;
+      text-decoration: inherit;
+
+      transition: font-weight 0.2s ease;
+      &:hover {
+        font-weight: bold;
+      }
     }
     .separator {
       display: flex;
@@ -125,6 +164,21 @@
   .experience_right {
     width: 75%;
     padding: 15px 0 0 25px;
+    button {
+      text-decoration: none;
+      padding: 4px 15px;
+      display: inline-block;
+      border: none;
+      font-family: "Poppins";
+      cursor: pointer;
+      font-size: 12px;
+      background: #262626;
+      color: #fff;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
   }
 }
 .about_subtitle {
@@ -165,20 +219,21 @@
     line-height: 1.4;
     font-size: 35px;
     @media screen and (max-width: 786px) {
-        font-size: 30px;
-        padding-bottom: 10px;
+      font-size: 30px;
+      padding-bottom: 10px;
     }
-}
-.projects__section_Projects {
-    // background-color: blueviolet;
+  }
+  .projects__section_projects {
+    display: flex;
+    justify-content: center;
     ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 50px 0;
-        @media screen and (max-width: 546px) {
-            padding: 20px 0;
-        }
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px 0;
+      @media screen and (max-width: 546px) {
+        padding: 20px 0;
+      }
     }
   }
 }
@@ -194,7 +249,7 @@
   }
   width: 33.3%;
   min-width: 340px;
-  max-width: 370px;
+  max-width: 400px;
   height: 520px;
   padding: 0 15px;
   margin-bottom: 30px;
@@ -255,7 +310,6 @@
 }
 //____________
 
-.logo a img{
-    max-height: 100px;
+.logo a img {
+  max-height: 100px;
 }
-

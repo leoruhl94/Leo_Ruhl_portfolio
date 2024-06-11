@@ -16,7 +16,7 @@ const Portfolio = () => {
             <div className="portfolio_title">
               <div className="title_flex">
                 <div className="left">
-                  <span>Portfolio</span>
+                  <span>Portafolio</span>
                   <h3>Ultimos Proyectos</h3>
                 </div>
               </div>

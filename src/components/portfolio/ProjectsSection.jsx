@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
         <div className="projects__section_title">
           <h3>Galeria de Proyectos</h3>
         </div>
-        <div className="projects__section_Projects">
+        <div className="projects__section_projects">
           <ul>
             {projects?.map((item) => {
               return (
@@ -52,14 +52,23 @@ const ProjectItem = ({ url_img, title, description, github, deploy }) => {
             <h3>{title}</h3>
             <p>{description}</p>
             <div className="projectItem_buttons">
-              <a href={github}>
-                <SiGithub />
-                Github
-              </a>
-              <a href={deploy}>
-                <MdWeb />
-                Deploy
-              </a>
+              {!!github && (
+                <a href={github} target="_blank" rel="noreferrer">
+                  <SiGithub />
+                  Github
+                </a>
+              )}
+              {!!deploy && (
+                <a
+                  href={deploy}
+                  target="_blank"
+                  style={{ marginLeft: "auto" }}
+                  rel="noreferrer"
+                >
+                  <MdWeb />
+                  Deploy
+                </a>
+              )}
             </div>
           </div>
         </div>

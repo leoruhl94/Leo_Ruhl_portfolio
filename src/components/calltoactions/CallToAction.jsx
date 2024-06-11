@@ -43,7 +43,7 @@ const CallToActionTwo = () => {
           <Fade direction="up" triggerOnce>
             <div className="button">
               <button className="white-fill-bg" onClick={toggleModalOne}>
-                Contactame!
+                Contáctame!
               </button>
             </div>
           </Fade>
@@ -68,7 +68,7 @@ const CallToActionTwo = () => {
             <div className="description_wrap scrollable">
               {/* Start modal content */}
               <div className="title">
-                <h3>Get in touch</h3>
+                <h3>Ponerse en contacto</h3>
               </div>
               {/* End title */}
               <div className="wrapper">

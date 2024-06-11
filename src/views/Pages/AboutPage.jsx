@@ -10,41 +10,44 @@ export const AboutPage = () => {
   return (
     <div>
       <ScrollToTop>
-      <Header />
-      <AboutSection />
-      <div className="portfolio_section" id="aboutPage_3">
-        <div className="portfolio_about image"
+        <Header />
+        <AboutSection />
+        <div className="portfolio_section" id="aboutPage_3">
+          <div
+            className="portfolio_about image"
             style={{
               backgroundImage: `url(${
-                process.env.PUBLIC_URL + "img/callto-action/white-light-abstract.png"
+                process.env.PUBLIC_URL +
+                "img/callto-action/white-light-abstract.png"
               })`,
-            }}>
-          <div className="portfolio_mobalbox_contact">
-            <div className="box_inner">
-              <div className="description_wrap scrollable">
-                {/* Start modal content */}
-                <div className="title">
-                  <h3>Get in touch</h3>
-                </div>
-                {/* End title */}
-                <div className="wrapper">
-                  <div className="left">
-                    <div className="fields">
-                      <Contact />
+            }}
+          >
+            <div className="portfolio_mobalbox_contact">
+              <div className="box_inner">
+                <div className="description_wrap scrollable">
+                  {/* Start modal content */}
+                  <div className="title">
+                    <h3>Ponerse en contacto</h3>
+                  </div>
+                  {/* End title */}
+                  <div className="wrapper">
+                    <div className="left">
+                      <div className="fields">
+                        <Contact />
+                      </div>
+                    </div>
+                    <div className="right">
+                      <Contactlinks />
                     </div>
                   </div>
-                  <div className="right">
-                    <Contactlinks />
-                  </div>
+                  {/* End modal conetent */}
                 </div>
-                {/* End modal conetent */}
               </div>
+              {/* End box inner */}
             </div>
-            {/* End box inner */}
           </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
       </ScrollToTop>
     </div>
   );
